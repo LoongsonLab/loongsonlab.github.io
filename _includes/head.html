@@ -1,0 +1,35 @@
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="application-name" content="{{ site.title }}" />
+  <meta name="theme-color" content="#b00" />
+
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://use.fontawesome.com/releases/v6.2.1/css/all.css"
+    rel="stylesheet"
+  />
+  <link href="{{ '/styles.css' | relative_url }}" rel="stylesheet" />
+
+  <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}" />
+  <link
+    rel="icon"
+    type="image/png"
+    href="{{ '/assets/logo-light.png' | relative_url }}"
+    sizes="250x250"
+  />
+
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="{{ site.title }}"
+    href="{{ '/feed.xml' | absolute_url }}"
+  />
+
+  {% seo %}
+</head>

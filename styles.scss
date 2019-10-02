@@ -1,0 +1,195 @@
+---
+---
+
+@charset "utf-8";
+
+@import "tachyons-sass/tachyons.scss";
+
+html,
+button,
+input,
+select,
+textarea {
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
+  margin: 0;
+  height: 100%;
+  position: relative;
+}
+
+:root {
+  --cmu-red: #b00;
+  --cmu-gray: #e0e0e0;
+  --cmu-dark-gray: #666;
+
+  --cmu-gold: #a60;
+  --cmu-teal: #067;
+  --cmu-blue: #247;
+  --cmu-green: #085;
+  --cmu-dark-green: #243;
+
+  --pink: #faa;
+
+  --text-color: #000;
+}
+
+.cmu-red {
+  color: var(--cmu-red);
+}
+.cmu-dark-gray {
+  color: var(--cmu-dark-gray);
+}
+.cmu-gray {
+  color: var(--cmu-gray);
+}
+.hover-cmu-red:hover {
+  color: var(--cmu-red);
+}
+
+.bg-cmu-dark-gray {
+  background-color: var(--cmu-dark-gray);
+}
+.bg-cmu-gray {
+  background-color: var(--cmu-gray);
+}
+
+.b--cmu-red {
+  border-color: var(--cmu-red);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @extend .cmu-dark-gray, .mt4, .mb3, .lh-title;
+}
+
+.cta {
+  color: var(--cmu-dark-gray);
+
+  @extend .ttu, .no-underline, .b;
+
+  font-size: 0.9em;
+  margin-right: 0.15em;
+
+  &:after {
+    content: " \25BA";
+    display: inline;
+    position: relative;
+    font-size: 75%;
+    top: -1px;
+    margin-left: 0.15em;
+  }
+}
+
+.mw-max-width {
+  max-width: 76rem;
+}
+
+main {
+  a {
+    color: var(--cmu-red);
+    text-decoration-color: var(--pink);
+    @extend .link;
+
+    &:hover,
+    &:focus {
+      @extend .dim;
+    }
+  }
+}
+
+button {
+  border-bottom: 2px solid var(--cmu-dark-gray);
+  background-color: 2px solid var(--cmu-gray);
+  padding: 0.2rem 0.6rem;
+}
+
+.jumbotron {
+  // https://www.gradient-animator.com/
+  background: linear-gradient(
+    280deg,
+    var(--cmu-teal),
+    var(--cmu-green),
+    var(--cmu-blue),
+    var(--cmu-gold),
+    var(--cmu-red)
+  );
+  background-size: 800% 800%;
+  animation: move 30s ease infinite;
+
+  @keyframes move {
+    0% {
+      background-position: 0% 20%;
+    }
+    50% {
+      background-position: 100% 80%;
+    }
+    100% {
+      background-position: 0% 20%;
+    }
+  }
+
+  @extend .white;
+
+  h1 {
+    @extend .white;
+  }
+
+  .cta,
+  a {
+    color: white;
+  }
+}
+
+footer {
+  background-image: url(assets/bg-seal.png);
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-position-y: 10px;
+  background-size: 500px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper{
+  flex: 1 0 auto;
+}
+
+p, ul, ol {
+  @extend .measure-wide, .lh-copy;
+}
+
+.preview-image {
+  width: 10rem;
+  height: 7rem;
+  background-size: cover;
+  background-position: top left;
+  transition: background 1.5s;
+
+  &:hover {
+    background-position: bottom right;
+  }
+}
+
+@media screen and (max-width: 30em) {
+  .center-s {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
