@@ -2,6 +2,8 @@
 layout: publication
 year: 2023
 title: "Zeno: An Interactive Framework for Behavioral Evaluation of Machine Learning"
+poster: /assets/publications/2023-zeno.png
+thumb: /assets/publications/2023-zeno_thumb.png
 authors:
   - Ángel Alexander Cabrera
   - Erica Fu
@@ -23,7 +25,11 @@ tags:
   - Machine Learning
 pdf: https://arxiv.org/pdf/2302.04732.pdf
 arxiv: "2302.04732"
+permalink: publications/2023-zeno
+lang: en
 ---
+
+## Abstract
 
 Machine learning models with high accuracy on test data can still produce
 systematic failures, such as harmful biases and safety issues, when deployed in
@@ -39,3 +45,7 @@ Zeno, a general-purpose framework for visualizing and testing AI systems across
 diverse use cases. In four case studies with participants using Zeno on
 real-world models, we found that practitioners were able to reproduce previous
 manual analyses and discover new systematic failures.
+
+## Result
+
+What can we do?

@@ -117,10 +117,12 @@
             </div>
             <div class="pt4">
               <abbr
-                title="Last build on {{ site.time | date: '%Y-%m-%d' }}"
+                title="Last build on {{ site.time | date: '%Y-%m-%d %H:%M' }}"
                 class="white"
                 style="text-underline-position: under"
-                >{{ site.time | date: "%B %Y" }}</abbr
+                >
+                <i class="fas fa-gears mr1"></i>
+                {{ site.time | date: "%Y-%m-%d" }}</abbr
               >
             </div>
           </div>

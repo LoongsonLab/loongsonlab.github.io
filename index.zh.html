@@ -127,18 +127,23 @@ lang: zh
     <a class="cta" href="{{'/publications' | relative_url }}">Show all</a>
 
     <div class="mv3">
-      {% assign recent_pubs = site.publications | reverse %} {% for pub in
+      {% assign recent_pubs = site.publications | where: "lang", site.active_lang | reverse %} {% for pub in
       recent_pubs limit:5 %}
       <div class="mt4 mt3-ns flex flex-row-ns flex-column">
-        {% assign thumb = 'assets' | append: pub.url | replace: '.html',
-        '_thumb.png' %}
+        {% if pub.thumb %}
+          {% assign thumb = pub.thumb %}
+        {% elsif pub.poster %}
+          {% assign thumb = pub.poster %}
+        {% else %}
+          {% assign thumb = '/assets/ict.png' %}
+        {% endif %}
         <div
           class="h3 mr3-ns mb2 mb0-ns flex-shrink-0 preview-image ba b--black-05 db"
           style="background-image: url('{{ thumb | relative_url }}')"
         ></div>
         <div class="measure-wide">
           <div class="mb1">
-            <a href="{{ pub.url | relative_url  }}" class="b link black hover-cas-red"
+            <a href="{{ pub.url | relative_url }}" class="b link black hover-cas-red"
               >{{ pub.title }}</a
             >
             <span class="fw2">
