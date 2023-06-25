@@ -3,9 +3,11 @@ layout: page
 title: About DIG
 subtitle: Learn more about the Data Interaction Group at Carnegie Mellon University.
 description: Learn more about the Data Interaction Group at Carnegie Mellon University.
+permalink: about/
+lang: zh
 ---
 
-## What Motivates Us
+## What Motivates Us??
 
 We are passionate about helping people make sense of data. Data permeates many
 aspects of our lives today. Data scientists analyze data to provide

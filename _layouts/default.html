@@ -36,36 +36,45 @@
               <a
                 class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib"
                 href="{{ '/about' | relative_url }}"
-                >About</a
+                >{{ site.data.head[site.active_lang]["about"] }}</a
               >
               <a
                 class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib"
                 href="{{ '/team' | relative_url }}"
-                >Team</a
+                >{{ site.data.head[site.active_lang]["team"] }}</a
               >
               <a
                 class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib"
                 href="{{ '/publications' | relative_url }}"
-                >Publications</a
+                >{{ site.data.head[site.active_lang]["publications"] }}</a
               >
               <a
                 class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib"
                 href="{{ '/news' | relative_url }}"
-                >News</a
+                >{{ site.data.head[site.active_lang]["news"] }}</a
               >
             </div>
             <div class="tc ml3-m ml4-l">
               <a
                 class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib"
                 href="https://github.com/cmudig"
-                ><i class="fab fa-github mr2"></i>GitHub</a
+                ><i class="fab fa-github mr1"></i>GitHub</a
               >
-              <a
-                class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib"
-                href="https://hci.social/@cmudig"
-              >
-                <i class="fab fa-mastodon mr2"></i>Mastodon</a
-              >
+
+              <!-- Language Select Button -->
+              {% for lang in site.languages %}
+                {% if lang != site.active_lang %}
+                <a
+                  class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib"
+                  {% if lang == site.default_lang %}
+                    {% static_href %}href="{{ page.permalink }}"{% endstatic_href %}
+                  {% else %}
+                    href="/{{ lang }}{{ page.permalink }}"
+                  {% endif %}
+                  ><i class="fas fa-language mr1"></i>{{ site.data.lang[lang] }}</a
+                >
+                {% endif %}
+              {% endfor %}
             </div>
           </nav>
         </div>
@@ -81,28 +90,30 @@
         <div class="flex flex-row-ns flex-column">
           <div class="w-50-ns">
             <div class="pv1">
-              Hello from Pittsburgh.
+              {{ site.data.foot[site.active_lang]["greet"] }}
+            </div>
+
+            <div class="pv1">
+              {{ site.data.foot[site.active_lang]["labname"] }}
+            </div>
+            <div class="pv1">
+              {{ site.data.foot[site.active_lang]["address"] }}
+            </div>
+            <div class="pv1">
               <a
                 href="{{ '/team' | relative_url }}"
-                class="link white dim underline"
-                >Come join us!</a
-              >
-            </div>
-            <div class="pv1">
+                class="link white dim mr2"
+                >
+                <i class="fas fa-users-line"></i>
+                {{ site.data.foot[site.active_lang]["join"] }}
+              </a>
               <a
-                href="https://github.com/cmudig/cmudig.github.io/edit/main/{{
-                  page.path
-                }}"
-                class="link white dim"
-                >Edit this page</a
-              >
-            </div>
-            <div class="pv1">
-              We are at <a rel="me" href="https://hci.social/@cmudig" class="link white dim">@cmudig@hci.social</a> and
-              <a href="https://twitter.com/cmudig" class="link white dim">@cmudig</a>.
-            </div>
-            <div class="pv1">
-              Our lab is in NSH A408.
+                href="{{site.page_url}}{{page.path}}"
+                class="link white dim mr2"
+                >
+                <i class="fas fa-pen-to-square"></i>
+                {{ site.data.foot[site.active_lang]["edit"] }}
+              </a>
             </div>
             <div class="pt4">
               <abbr
@@ -117,18 +128,18 @@
             <h4 class="white mt0-ns">Links</h4>
             <ul class="list pl0">
               <li>
-                <a href="https://hcii.cmu.edu" class="link white dim pv1 dib"
-                  >Human-Computer Interaction Institute</a
+                <a href="{{ site.data.foot[site.active_lang]['loongson_url'] }}" class="link white dim pv1 dib"
+                  >{{ site.data.foot[site.active_lang]["loongson_link"] }}</a
                 >
               </li>
               <li>
-                <a href="https://www.cs.cmu.edu" class="link white dim pv1 dib"
-                  >School of Computer Science</a
+                <a href="{{ site.data.foot[site.active_lang]['ict_url'] }}" class="link white dim pv1 dib"
+                  >{{ site.data.foot[site.active_lang]["ict_link"] }}</a
                 >
               </li>
               <li>
-                <a href="https://www.cmu.edu" class="link white dim pv1 dib"
-                  >Carnegie Mellon University</a
+                <a href="{{ site.data.foot[site.active_lang]['ucas_url'] }}" class="link white dim pv1 dib"
+                  >{{ site.data.foot[site.active_lang]["ucas_link"] }}</a
                 >
               </li>
             </ul>

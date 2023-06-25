@@ -11,6 +11,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   communicate data with interactive systems.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dig.cmu.edu" # the base hostname & protocol for your site, e.g. http://example.com
+page_url: "https://github.com/cmudig/cmudig.github.io/edit/main/"
 twitter_username: cmudig
 github_username: cmudig
 
@@ -27,9 +28,16 @@ collections:
   courses:
     output: true
 
+languages: ["zh", "en"]
+default_lang: "zh"
+exclude_from_localization: ["assets"]
+parallel_localization: true
+lang_from_path: true
+
 # Build settings
 markdown: kramdown
 plugins:
+  - jekyll-polyglot
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
