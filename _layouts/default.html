@@ -89,22 +89,22 @@
       <div class="w-100 mw8 ph4-l ph3 center pv5">
         <div class="flex flex-row-ns flex-column">
           <div class="w-50-ns">
-            <div class="pv1">
+            <div class="pv2">
               {{ site.data.foot[site.active_lang]["greet"] }}
             </div>
 
-            <div class="pv1">
-              {{ site.data.foot[site.active_lang]["labname"] }}
+            <div class="pv2 footer-note">
+              {{ site.data.foot[site.active_lang]["lab_name"] }}
             </div>
-            <div class="pv1">
+            <div class="pv2">
               {{ site.data.foot[site.active_lang]["address"] }}
             </div>
-            <div class="pv1">
+            <div class="pv2">
               <a
                 href="{{ '/team' | relative_url }}"
                 class="link white dim mr2"
                 >
-                <i class="fas fa-users-line"></i>
+                <i class="fas fa-users"></i>
                 {{ site.data.foot[site.active_lang]["join"] }}
               </a>
               <a
@@ -143,6 +143,11 @@
                 >
               </li>
             </ul>
+            <div style="max-width: 100%; display:flex; align-items:center;">
+              <div class="pr1" style="max-width: 60px;" ><img src="/assets/ucas.png" alt="ucas" /></div>
+              <div class="pr1" style="max-width: 60px;" ><img src="/assets/ict.png" alt="ict" /></div>
+              <div class="pr1" style="max-width: 100px;"><img src="/assets/loongson.png" alt="loongson" /></div>
+            </div>
           </div>
         </div>
       </div>

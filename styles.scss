@@ -152,7 +152,7 @@ footer {
   background-image: url(/assets/bg-seal.png);
   background-repeat: no-repeat;
   background-position-x: 10px;
-  background-position-y: 10px;
+  background-position-y: 30px;
   background-size: 500px;
 }
 
@@ -161,7 +161,7 @@ body {
   flex-direction: column;
 }
 
-.wrapper{
+.wrapper {
   flex: 1 0 auto;
 }
 
@@ -186,4 +186,9 @@ p, ul, ol {
     margin-right: auto;
     margin-left: auto;
   }
+}
+
+.footer-note p {
+  margin: 0;
+  padding: .05rem 0;
 }
