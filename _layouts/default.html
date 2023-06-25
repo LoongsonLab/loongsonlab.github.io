@@ -67,9 +67,9 @@
                 <a
                   class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cas-red link dib"
                   {% if lang == site.default_lang %}
-                    {% static_href %}href="{{ page.permalink }}"{% endstatic_href %}
+                    {% static_href %}href="{{ page.permalink | relative_url }}"{% endstatic_href %}
                   {% else %}
-                    href="/{{ lang }}{{ page.permalink }}"
+                    href="{{ lang | relative_url }}{{ page.permalink }}"
                   {% endif %}
                   ><i class="fas fa-language mr1"></i>{{ site.data.lang[lang] }}</a
                 >
@@ -144,9 +144,9 @@
               </li>
             </ul>
             <div style="max-width: 100%; display:flex; align-items:center;">
-              <div class="pr1" style="max-width: 60px;" ><img src="/assets/ucas.png" alt="ucas" /></div>
-              <div class="pr1" style="max-width: 60px;" ><img src="/assets/ict.png" alt="ict" /></div>
-              <div class="pr1" style="max-width: 100px;"><img src="/assets/loongson.png" alt="loongson" /></div>
+              <div class="pr1" style="max-width: 60px;" ><img src="{{'/assets/ucas.png' | relative_url}}" alt="ucas" /></div>
+              <div class="pr1" style="max-width: 60px;" ><img src="{{'/assets/ict.png' | relative_url}}" alt="ict" /></div>
+              <div class="pr1" style="max-width: 100px;"><img src="{{'/assets/loongson.png' | relative_url}}" alt="loongson" /></div>
             </div>
           </div>
         </div>
