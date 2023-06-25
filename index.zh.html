@@ -82,14 +82,14 @@ lang: zh
         {% assign sorted_posts = site.posts %} {% for post in sorted_posts
         limit:5 %}
         <li class="pb2">
-          <a href="{{ post.url }}">{{ post.title }}</a>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
           <time datetime="{{ post.date }}" class="db f6 black-80"
             >{{ post.date | date: "%b %Y" }}</time
           >
         </li>
         {% endfor %}
       </ul>
-      <a class="cta" href="/news">Show all</a>
+      <a class="cta" href="{{'/news' | relative_url }}">Show all</a>
     </section>
 
     <section class="pl3-ns w-third-l w-50-m">
@@ -101,7 +101,7 @@ lang: zh
         assign sorted_courses = year.items | sort: 'semester' %} {% for course
         in sorted_courses %}
         <li class="pb2">
-          <a href="{{ course.url }}">{{ course.name }}</a>
+          <a href="{{ course.url | relative_url }}">{{ course.name }}</a>
           <span class="db f6 black-80"
             >{{ course.semester }} {{ course.year }}</span
           >
@@ -118,13 +118,13 @@ lang: zh
       research studies with visualization, machine learning, and data science
       practitioners!
     </p>
-    <a class="link dim dib cta" href="/studies"> Learn More </a>
+    <a class="link dim dib cta" href="{{'/studies' | relative_url }}"> Learn More </a>
   </div>
 
   <section class="pv3">
     <h2 class="f3">Recent Publications</h2>
 
-    <a class="cta" href="/publications">Show all</a>
+    <a class="cta" href="{{'/publications' | relative_url }}">Show all</a>
 
     <div class="mv3">
       {% assign recent_pubs = site.publications | reverse %} {% for pub in
@@ -138,7 +138,7 @@ lang: zh
         ></div>
         <div class="measure-wide">
           <div class="mb1">
-            <a href="{{ pub.url }}" class="b link black hover-cas-red"
+            <a href="{{ pub.url | relative_url  }}" class="b link black hover-cas-red"
               >{{ pub.title }}</a
             >
             <span class="fw2">
@@ -146,12 +146,12 @@ lang: zh
               unless forloop.last %}, {% endunless %}{% endfor %}</span
             >, <span class="nowrap">{{ pub.venue }} {{ pub.year }}</span>
           </div>
-          <a href="{{ pub.url }}" class="cta">Show details</a>
+          <a href="{{ pub.url | relative_url  }}" class="cta">Show details</a>
         </div>
       </div>
       {% endfor %}
     </div>
 
-    <a class="cta" href="/publications">Show all</a>
+    <a class="cta" href="{{'/publications' | relative_url }}">Show all</a>
   </section>
 </div>
