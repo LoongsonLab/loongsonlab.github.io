@@ -28,43 +28,44 @@ body {
 }
 
 :root {
-  --cmu-red: #b00;
-  --cmu-gray: #e0e0e0;
-  --cmu-dark-gray: #666;
-
-  --cmu-gold: #a60;
-  --cmu-teal: #067;
-  --cmu-blue: #247;
-  --cmu-green: #085;
-  --cmu-dark-green: #243;
+  --cas-red: #9f1214;
+  --cas-gray: #bbb;
+  --cas-dark-blue: #0a3b95;
+  --cas-blue: #3175b3;
 
   --pink: #faa;
 
   --text-color: #000;
 }
 
-.cmu-red {
-  color: var(--cmu-red);
+.cas-red {
+  color: var(--cas-red);
 }
-.cmu-dark-gray {
-  color: var(--cmu-dark-gray);
+.cas-dark-blue {
+  color: var(--cas-dark-blue);
 }
-.cmu-gray {
-  color: var(--cmu-gray);
+.cas-gray {
+  color: var(--cas-gray);
 }
-.hover-cmu-red:hover {
-  color: var(--cmu-red);
+.hover-cas-red:hover {
+  color: var(--cas-red);
 }
-
-.bg-cmu-dark-gray {
-  background-color: var(--cmu-dark-gray);
-}
-.bg-cmu-gray {
-  background-color: var(--cmu-gray);
+.cas-blue {
+  color: var(--cas-blue);
 }
 
-.b--cmu-red {
-  border-color: var(--cmu-red);
+.bg-cas-dark-blue {
+  background-color: var(--cas-dark-blue);
+}
+.bg-cas-gray {
+  background-color: var(--cas-gray);
+}
+.bg-cas-blue {
+  background-color: var(--cas-blue);
+}
+
+.b--cas-red {
+  border-color: var(--cas-red);
 }
 
 h1,
@@ -73,11 +74,11 @@ h3,
 h4,
 h5,
 h6 {
-  @extend .cmu-dark-gray, .mt4, .mb3, .lh-title;
+  @extend .cas-dark-blue, .mt4, .mb3, .lh-title;
 }
 
 .cta {
-  color: var(--cmu-dark-gray);
+  color: var(--cas-dark-blue);
 
   @extend .ttu, .no-underline, .b;
 
@@ -100,7 +101,7 @@ h6 {
 
 main {
   a {
-    color: var(--cmu-red);
+    color: var(--cas-red);
     text-decoration-color: var(--pink);
     @extend .link;
 
@@ -112,21 +113,14 @@ main {
 }
 
 button {
-  border-bottom: 2px solid var(--cmu-dark-gray);
-  background-color: 2px solid var(--cmu-gray);
+  border-bottom: 2px solid var(--cas-dark-blue);
+  background-color: 2px solid var(--cas-gray);
   padding: 0.2rem 0.6rem;
 }
 
 .jumbotron {
   // https://www.gradient-animator.com/
-  background: linear-gradient(
-    280deg,
-    var(--cmu-teal),
-    var(--cmu-green),
-    var(--cmu-blue),
-    var(--cmu-gold),
-    var(--cmu-red)
-  );
+  background: var(--cas-blue);
   background-size: 800% 800%;
   animation: move 30s ease infinite;
 
@@ -155,7 +149,7 @@ button {
 }
 
 footer {
-  background-image: url(assets/bg-seal.png);
+  background-image: url(/assets/bg-seal.png);
   background-repeat: no-repeat;
   background-position-x: 10px;
   background-position-y: 10px;
