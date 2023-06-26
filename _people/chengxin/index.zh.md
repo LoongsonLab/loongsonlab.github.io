@@ -1,7 +1,7 @@
 ---
 layout: people
-name: 赵东儒
-image: /assets/people/zhaodongru.jpg
+name: 程鑫
+image: /assets/people/chengxin.jpg
 role: 硕士研究生
 blog: https://www.baidu.com
 email: example@example.com
@@ -10,7 +10,7 @@ alumni: false
 advisors:
     - 张福新
 date: 2023-06-26
-permalink: people/zhaodongru
+permalink: people/chengxin
 lang: zh
 ---
 

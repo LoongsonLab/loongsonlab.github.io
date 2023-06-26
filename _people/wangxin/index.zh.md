@@ -1,8 +1,8 @@
 ---
 layout: people
-name: 牛根
-image: /assets/people/niugen.jpg
-role: 博士研究生
+name: 王鑫
+image: /assets/people/wangxin.jpg
+role: 硕士研究生
 blog: https://www.baidu.com
 email: example@example.com
 github: https://www.baidu.com
@@ -10,10 +10,10 @@ alumni: false
 advisors:
     - 张福新
 date: 2023-06-26
-permalink: people/niugen
+permalink: people/wangxin
 lang: zh
 ---
 
-## Anything want to say
+## 有什么话想说的
 
-Nothing, do not want to say anything.
+没有，我一句都不想说

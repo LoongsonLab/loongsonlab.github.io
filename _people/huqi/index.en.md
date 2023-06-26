@@ -1,8 +1,8 @@
 ---
 layout: people
-name: Gen Niu
-image: /assets/people/niugen.jpg
-role: PhD Student
+name: SHUQI HUANG
+image: /assets/people/huqi.jpg
+role: Masters Student
 blog: https://www.baidu.com
 email: example@example.com
 github: https://www.baidu.com
@@ -10,7 +10,7 @@ alumni: false
 advisors:
     - Fuxin Zhang
 date: 2023-06-26
-permalink: people/niugen
+permalink: people/huqi
 lang: en
 ---
 
