@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang }}">
   {% include head.html %}
   <body>
     <div class="wrapper">
@@ -7,7 +7,7 @@
         <div
           class="w-100 mw8 ph4-l ph3 center pt2 pb3 flex items-baseline flex flex-wrap"
         >
-          <a href="/" class="dib f2 f3-ns fw6 link black hover-cas-red center-s pb3 pr3">
+          <a href="{{ '/' | relative_url }}" class="dib f2 f3-ns fw6 link black hover-cas-red center-s pb3 pr3">
             CMU DIG
             <picture>
               <source
