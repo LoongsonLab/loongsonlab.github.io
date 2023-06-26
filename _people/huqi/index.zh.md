@@ -1,6 +1,6 @@
 ---
 layout: people
-name: 黄树琦
+name: 胡起
 image: /assets/people/huqi.jpg
 role: 硕士研究生
 blog: https://www.baidu.com

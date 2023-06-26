@@ -6,7 +6,8 @@ role: Masters Student
 blog: https://www.baidu.com
 email: example@example.com
 github: https://www.baidu.com
-alumni: false
+alumni: true
+alumni_since: 2023
 advisors:
     - Fuxin Zhang
 date: 2023-06-26
