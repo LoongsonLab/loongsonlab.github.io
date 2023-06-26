@@ -12,24 +12,26 @@ authors:
   - Ameet Talwalkar
   - Jason I. Hong
   - Adam Perer
+permalink: publications/2023-zeno
+lang: zh
 link: http://zenoml.com
 venue: CHI
 highlight: true
-venue_location: Hamburg, Germany
+venue_location: 德国
 venue_tags:
   - CHI
 venue_url: https://chi2023.acm.org/
 type:
   - Conference
 tags:
-  - Machine Learning
+  - 机器学习
 pdf: https://arxiv.org/pdf/2302.04732.pdf
 arxiv: "2302.04732"
-permalink: publications/2023-zeno
-lang: zh
+awards:
+  - Best Paper Award
 ---
 
-## Abstract
+## 摘要
 
 Machine learning models with high accuracy on test data can still produce
 systematic failures, such as harmful biases and safety issues, when deployed in
@@ -46,6 +48,6 @@ diverse use cases. In four case studies with participants using Zeno on
 real-world models, we found that practitioners were able to reproduce previous
 manual analyses and discover new systematic failures.
 
-## Result
+## 结果
 
 What can we do?

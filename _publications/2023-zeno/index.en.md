@@ -12,6 +12,8 @@ authors:
   - Ameet Talwalkar
   - Jason I. Hong
   - Adam Perer
+permalink: publications/2023-zeno
+lang: en
 link: http://zenoml.com
 venue: CHI
 highlight: true
@@ -25,8 +27,8 @@ tags:
   - Machine Learning
 pdf: https://arxiv.org/pdf/2302.04732.pdf
 arxiv: "2302.04732"
-permalink: publications/2023-zeno
-lang: en
+awards:
+  - Best Paper Award
 ---
 
 ## Abstract

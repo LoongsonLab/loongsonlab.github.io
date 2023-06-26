@@ -3,6 +3,8 @@ layout: page
 title: Publications
 subtitle: We publish at Visualization, Machine Learning, and Data Science conferences.
 description: Recent publications from the Data Interaction Group at Visualization, Machine Learning, and Data Science conferences.
+permalink: publications/
+lang: en
 ---
 
 <div id="facets" class="dn flex flex-row flex-wrap">
@@ -51,8 +53,13 @@ description: Recent publications from the Data Interaction Group at Visualizatio
   {% capture anchor %}{% if pub.id %}{{ pub.id }}{% else %}{{ pub.title | slugify }}{% endif %}{% endcapture %}
 
   <div class="publication flex mt4" data-pub='{{ pub | jsonify | escape }}'>
-    {% assign thumb = 'assets' | append: pub.url | replace: '.html',
-      '_thumb.png' %}
+    {% if pub.thumb %}
+      {% assign thumb = pub.thumb %}
+    {% elsif pub.poster %}
+      {% assign thumb = pub.poster %}
+    {% else %}
+      {% assign thumb = '/assets/ict.png' %}
+    {% endif %}
     <div class="h3 mr4 flex-shrink-0 preview-image ba b--black-05 dn db-ns "
       style="background-image: url('{{ thumb | relative_url }}')"></div>
     <div>
