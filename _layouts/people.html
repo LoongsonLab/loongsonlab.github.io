@@ -15,10 +15,10 @@ layout: default
       {% endif %}
     </p>
     {% endif %}
-    <div class="">
+    <div class="pv1">
       {% if page.blog %}
       <a href="{{ page.blog }}" class="black link hover-cas-red mr3 dib">
-        <i class="fas fa-link f6" aria-hidden="true"></i> {{ page.blog }}
+        <i class="fas fa-link f6" aria-hidden="true"></i> {{ site.data.people[site.active_lang]["homepage"] }}
       </a>
       {% endif %}
       {% if page.email %}
@@ -31,6 +31,22 @@ layout: default
         <i class="fab fa-github f6" aria-hidden="true"></i> Github
       </a>
       {% endif %}
+    </div>
+    <div class="pv1">
+      {% for advisor in page.advisors %}
+      {% assign author = site.people | where:"name", advisor | first %}
+      <a href="{{ author.url | relative_url }}" class="black link hover-cas-red mt3 mr4 dib">
+        <div class="flex flex-column items-center">
+          <picture>
+            <source srcset="{{ author.image | relative_url }}"></source>
+            <source srcset="{{ 'assets/person.png' | relative_url }}"></source>
+            <img class="br-100 w3 h3 mb1" alt="Picture of {{ name }}" />
+          </picture>
+          <div class="black mw4 tc">{% include person name=name %}</div>
+        </div>
+        <i class="fas fa-chalkboard-user f6" aria-hidden="true"></i> {{ advisor }}
+      </a>
+      {% endfor %}
     </div>
   </div>
 </div>
