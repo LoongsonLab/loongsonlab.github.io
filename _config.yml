@@ -24,7 +24,7 @@ collections:
   publications:
     output: true
   people:
-    output: false
+    output: true
   courses:
     output: true
 

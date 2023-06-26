@@ -12,6 +12,7 @@ authors:
   - Ameet Talwalkar
   - Jason I. Hong
   - Adam Perer
+  - 赵东儒
 permalink: publications/2023-zeno
 lang: zh
 link: http://zenoml.com
