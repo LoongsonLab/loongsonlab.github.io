@@ -1,17 +1,14 @@
 ---
 layout: people
-name: Shuqi Huang
-image: /assets/people/huangshuqi.jpg
-role: Masters Student
+name: Fuxin Zhang
+image: /assets/people/zhangfuxin.jpg
+role: Professor
 blog: https://www.baidu.com
 email: example@example.com
 github: https://www.baidu.com
-alumni: true
-alumni_since: 2023
-advisors:
-    - Fuxin Zhang
+alumni: false
 date: 2023-06-26
-permalink: people/huangshuqi
+permalink: people/zhangfuxin
 lang: en
 ---
 
