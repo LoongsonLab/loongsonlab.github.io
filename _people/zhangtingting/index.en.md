@@ -1,8 +1,8 @@
 ---
 layout: people
-name: TINGTING ZHANG
+name: Tingting Zhang
 image: /assets/people/zhangtingting.jpg
-role: Masters Student
+role: Postdoc
 blog: https://www.baidu.com
 email: example@example.com
 github: https://www.baidu.com

@@ -2,7 +2,7 @@
 layout: people
 name: 张婷婷
 image: /assets/people/zhangtingting.jpg
-role: 硕士研究生
+role: 博士后
 blog: https://www.baidu.com
 email: example@example.com
 github: https://www.baidu.com

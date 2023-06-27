@@ -1,8 +1,8 @@
 ---
 layout: people
-name: XINYU LI
+name: Xinyu Li
 image: /assets/people/lixinyu.jpg
-role: Masters Student
+role: PhD Student
 blog: https://www.baidu.com
 email: example@example.com
 github: https://www.baidu.com

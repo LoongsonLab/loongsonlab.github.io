@@ -1,6 +1,6 @@
 ---
 layout: people
-name: XIN WANG
+name: Xin Wang
 image: /assets/people/wangxin.jpg
 role: Masters Student
 blog: https://www.baidu.com

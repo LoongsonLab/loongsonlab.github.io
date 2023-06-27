@@ -2,7 +2,7 @@
 layout: people
 name: Xin Cheng
 image: /assets/people/chengxin.jpg
-role: Masters Student
+role: PhD Student
 blog: https://www.baidu.com
 email: example@example.com
 github: https://www.baidu.com

@@ -1,8 +1,8 @@
 ---
 layout: people
-name: WENQING LI
+name: Wenqing Li
 image: /assets/people/liwenqing.jpg
-role: Masters Student
+role: PhD Student
 blog: https://www.baidu.com
 email: example@example.com
 github: https://www.baidu.com

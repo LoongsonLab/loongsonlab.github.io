@@ -2,7 +2,7 @@
 layout: people
 name: 李文青
 image: /assets/people/liwenqing.jpg
-role: 硕士研究生
+role: 博士研究生
 blog: https://www.baidu.com
 email: example@example.com
 github: https://www.baidu.com

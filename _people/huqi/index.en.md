@@ -1,12 +1,13 @@
 ---
 layout: people
-name: SHUQI HUANG
+name: Qi Hu
 image: /assets/people/huqi.jpg
 role: Masters Student
-blog: https://www.baidu.com
-email: example@example.com
-github: https://www.baidu.com
-alumni: false
+blog: https://blog.spcsky.com
+email: loongson@spcsky.com
+github: https://github.com/specialpointcentral
+alumni: true
+alumni_since: 2023
 advisors:
     - Fuxin Zhang
 date: 2023-06-26

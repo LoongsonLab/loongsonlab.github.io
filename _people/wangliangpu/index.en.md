@@ -1,8 +1,8 @@
 ---
 layout: people
-name: LIANGPU WANG
+name: Liangpu Wang
 image: /assets/people/wangliangpu.jpg
-role: Masters Student
+role: PhD Student
 blog: https://www.baidu.com
 email: example@example.com
 github: https://www.baidu.com

@@ -1,6 +1,6 @@
 ---
 layout: people
-name: HUAI XU
+name: Huai Xu
 image: /assets/people/xuhuai.jpg
 role: Masters Student
 blog: https://www.baidu.com
