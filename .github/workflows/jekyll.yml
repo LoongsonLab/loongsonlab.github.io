@@ -26,6 +26,9 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+env:
+  TZ: Asia/Shanghai
+
 jobs:
   # Build job
   build:
