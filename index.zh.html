@@ -65,7 +65,7 @@ lang: zh
     </section>
 
     <section class="pl3-ns w-third-l w-50-m">
-      <h2 class="f3">Courses</h2>
+      <h2 class="f3">课程</h2>
 
       <ul class="list pl0">
         {% assign years = site.courses | group_by: 'year' %}{% assign
@@ -73,7 +73,7 @@ lang: zh
         assign sorted_courses = year.items | sort: 'semester' %} {% for course
         in sorted_courses %}
         <li class="pb2">
-          <a href="{{ course.url | relative_url }}">{{ course.name }}</a>
+          <a href="{{ course.url | relative_url }}">{{ course.title }}</a>
           <span class="db f6 black-80"
             >{{ course.semester }} {{ course.year }}</span
           >

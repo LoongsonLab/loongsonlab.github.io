@@ -6,7 +6,7 @@ layout: default
   <div class="pv4 bg-near-white">
     <div class="w-100 mw8 ph4-l ph3 pv4-l pv3 center">
       <h1 class="f2 lh-title measure mt3">
-        {{ page.name }}
+        {{ page.title }}
       </h1>
       <div class="f4 measure lh-copy">
         <div>{{ page.semester }} {{ page.year }}</div>
@@ -24,29 +24,35 @@ layout: default
         <div class="flex flex-row flex-wrap items-start mt1 mr4">
           {% for name in page.instructors %} {% assign instructor = site.people |
             where:"name", name | first %}
-              <div class="flex flex-column items-center mt3 mr4">
-                <img
-                  class="br-100 w3 h3 mb1"
-                  src="{{ instructor.image | relative_url }}"
-                  alt="Picture of {{ instructor.name }}"
-                />
-                <div class="black">{{ instructor.name }}</div>
-                <div class="gray">(Instructor)</div>
+            <a href="{{ instructor.url | relative_url | default: 'javascript:;' }}"
+              class="black link hover-cas-red mt3 mr4">
+              <div class="flex flex-column items-center">
+                <picture>
+                  <source srcset="{{ instructor.image | relative_url }}"></source>
+                  <source srcset="{{ 'assets/person.png' | relative_url }}"></source>
+                  <img class="br-100 w3 h3 mb1" alt="Picture of {{ name }}" />
+                </picture>
+                <div class="black">{{ name }}</div>
+                <div class="gray">{{ site.data.course[site.active_lang]['instructor'] }}</div>
               </div>
+            </a>
           {% endfor %}
         </div>
         <div class="flex flex-row flex-wrap items-start mt1">
         {% for name in page.tas %} {% assign ta = site.people |
           where:"name", name | first %}
-            <div class="flex flex-column items-center mt3 mr4">
+          <a href="{{ ta.url | relative_url | default: 'javascript:;' }}"
+            class="black link hover-cas-red mt3 mr4">
+            <div class="flex flex-column items-center">
               <picture>
                 <source srcset="{{ ta.image | relative_url }}"></source>
                 <source srcset="{{ 'assets/person.png' | relative_url }}"></source>
                 <img class="br-100 w3 h3 mb1" alt="Picture of {{ name }}" />
               </picture>
               <div class="black">{{ name }}</div>
-              <div class="gray">(Teaching Assistant)</div>
+              <div class="gray">{{ site.data.course[site.active_lang]['tas'] }}</div>
             </div>
+          </a>
         {% endfor %}
         </div>
       </div>
@@ -54,6 +60,100 @@ layout: default
   </div>
 
   <div class="w-100 mw8 ph4-l ph3 center mt4">
+  <h2>{{ site.data.course[site.active_lang]['schedule'] }}</h2>
+    {% for lecture in page.schedule %}
+    <div class="flex mt1">
+      <span class="w-10 gray">{{ lecture.date | date: "%a, %b %d" }}</span>
+      <div class="w-90 measure-wide lh-copy">
+        <h3 class="f5 normal mt0">
+          <span class="b black">
+          {{ lecture.title }}
+          </span>
+    
+          {% if lecture.discussion %}
+            <a class="fr" href="{{ lecture.discussion }}" title="{{ site.data.course[site.active_lang]['discussion'] }}">
+              <i class="fas fa-comments"></i>
+            </a>
+          {% else %}
+            <span class="fr cas-gray">
+              <i class="fas fa-comments" aria-hidden="true" 
+                title="{{ site.data.course[site.active_lang]['nodiscussion'] }}"></i>
+            </span>
+          {% endif %}
+          {% if lecture.slides %}
+            <a class="fr mr2" href="{{ lecture.slides }}">
+              <i class="fas fa-window-maximize" aria-hidden="true"></i>
+              {{ site.data.course[site.active_lang]['slides'] }}
+            </a>
+          {% else %}
+            <span class="fr mr2 cas-gray"><i class="fas fa-window-maximize" aria-hidden="true"
+              title="{{ site.data.course[site.active_lang]['noslides'] }}"></i>
+              {{ site.data.course[site.active_lang]['slides'] }}
+            </span>
+          {% endif %}
+        </h3>
+        <ul class="list pl0 mv0">
+        {% for due in lecture.due %}
+          <li class="mt1">
+            <small class="br2 white bg-orange ph1 mr1">
+              {{- site.data.course[site.active_lang]['due'] -}}
+            </small>
+            <a href="{{ due.url }}">{{ due.name }}</a>
+          </li>
+        {% endfor %}
+        </ul>
+        <ul class="list pl0 mt0">
+        {% for reading in lecture.readings %}
+          <li class="mt1">
+          {% if reading.required %}
+            <small class="br2 white bg-gray ph1 mr1">
+              {{- site.data.course[site.active_lang]['required'] -}}
+            </small>
+          {% else %}
+            <small class="br2 ba b--gray ph1 mr1">
+              {{- site.data.course[site.active_lang]['optional'] -}}
+            </small>
+          {% endif %}
+    
+          {% if reading.type == "video" %}
+            <i class="fas fa-film" aria-hidden="true"></i>
+          {% elsif reading.type == "pdf" %}
+            <i class="fas fa-file-pdf" aria-hidden="true"></i>
+          {% elsif reading.type == "website" %}
+            <i class="fas fa-globe" aria-hidden="true"></i>
+          {% elsif reading.type == "audio" %}
+            <i class="fas fa-podcast" aria-hidden="true"></i>
+          {% elsif reading.type == "notebook" %}
+            <i class="fas fa-laptop-code"  aria-hidden="true"></i>
+          {% endif %}
+    
+          {% if reading.url %}
+            <a href="{{reading.url}}">{{ reading.name }}</a>
+          {% else %}
+            {{ reading.name }}
+          {% endif %}
+    
+          {% if reading.author %}
+            -- {{reading.author}}
+          {% endif %}
+          {% if reading.venue %}
+            , <i>{{reading.venue}}</i>
+          {% endif %}
+          {% if reading.year %}
+            <i>{{reading.year}}</i>
+          {% endif %}
+          {% if reading.note %}
+            <br/>
+            <small class="dark-gray">{{reading.note}}</small>
+          {% endif %}
+          </li>
+        {% endfor %}
+    
+      </ul>
+      </div>
+    </div>
+    {% endfor %}
+
     {{ content }}
   </div>
 </section>

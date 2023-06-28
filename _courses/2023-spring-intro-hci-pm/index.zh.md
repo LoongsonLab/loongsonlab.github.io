@@ -1,17 +1,16 @@
 ---
 layout: course
-name: HCI for Product Managers
+title: HCI for Product Managers
 year: 2023
 semester: Spring
 instructors:
-  - Adam Perer
+  - 张福新
 tas:
-  - Gabrielle Augustin
-  - Valeria Cordova Mulvany
+  - 李欣宇
 time: M/W 12:30-1:50 PM
 location: 3SC 172
-redirect_from:
-  - hcipm2023
+permalink: courses/2023-spring-intro-hci-pm
+lang: zh
 
 schedule:
   - date: 2023-01-18
@@ -259,108 +258,13 @@ schedule:
   - date: 2023-03-01
     title: "TBD"
 
-
-
-
-
 ---
 
 *Additional course information available on [Canvas](https://canvas.cmu.edu/courses/32469).*
 
-
 Product managers are ultimately responsible for developing products that meet customer needs. The field of Human-Computer Interaction (HCI) has developed techniques to understand user needs and design human-centered technology that directly addresses those needs. In this course, students will learn and practice these techniques through a course-long project.
 
 In this course, students will develop skills drawn from the field of HCI to research, ideate, evaluate and define a new software application, culminating with the presentation of a document specifying use cases and functionality. This course provides an overview and introduction to the field of human-computer interaction, focusing on how it applies to product managers.  Particular emphasis will be placed on what HCI methods and HCI-trained specialists can bring to design and development teams. The course will provide a hands-on introduction to proven tools and techniques for creating and improving user interfaces, such as Contextual Interviewing, Rapid Prototyping, Heuristic Evaluation, and Think-Aloud Usability Testing. Students at the end of the course will have learned how to perform some useful techniques and will have an understanding of systematic procedures for creating usable and useful designs and systems.
-
-
-
-{: .no_toc }
-
-## Jump to
-* TOC
-{:toc}
-
-## Schedule and Readings
-
-*Subject to modification*
-
-{% for lecture in page.schedule %}
-
-<div class="flex mt1">
-  <span class="w-10 gray">{{ lecture.date | date: "%a, %b %d" }}</span>
-  <div class="w-90 measure-wide lh-copy">
-    <h3 class="f5 normal mt0">
-      <span class="b black">
-      {{ lecture.title }}
-      </span>
-
-      <!-- {% if lecture.discussion %}
-        <a class="fr" href="{{ lecture.discussion }}" title="Discussion"><i class="fas fa-comments"></i></a>
-      {% else %}
-        <span class="fr"><i class="fas fa-comments" aria-hidden="true" title="Discussion link coming"></i></span>
-      {% endif %} -->
-
-      {% if lecture.slides %}
-        <a class="fr mr2" href="{{ lecture.slides }}"><i class="fas fa-window-maximize" aria-hidden="true"></i> Slides</a>
-      {% else %}
-        <span class="fr mr2"><i class="fas fa-window-maximize" aria-hidden="true" title="Slides link coming"></i> Slides</span>
-      {% endif %}
-    </h3>
-    <ul class="list pl0 mv0">
-    {% for due in lecture.due %}
-      <li class="mt1">
-        <small class="br2 white bg-orange ph1 mr1">Due</small>
-        <a href="{{ due.url }}">{{ due.name }}</a>
-      </li>
-    {% endfor %}
-    </ul>
-    <ul class="list pl0 mt0">
-    {% for reading in lecture.readings %}
-      <li class="mt1">
-      {% if reading.required %}
-        <small class="br2 white bg-gray ph1 mr1">Required</small>
-      {% else %}
-        <small class="br2 ba b--gray ph1 mr1">Optional</small>
-      {% endif %}
-
-      {% if reading.type == "video" %}
-        <i class="far fa-film" aria-hidden="true"></i>
-      {% elsif reading.type == "pdf" %}
-        <i class="far fa-file-pdf" aria-hidden="true"></i>
-      {% elsif reading.type == "website" %}
-        <i class="far fa-globe" aria-hidden="true"></i>
-      {% elsif reading.type == "audio" %}
-        <i class="far fa-podcast" aria-hidden="true"></i>
-      {% elsif reading.type == "notebook" %}
-        <i class="fas fa-laptop-code"  aria-hidden="true"></i>
-      {% endif %}
-
-      {% if reading.url %}
-        <a href="{{reading.url}}">{{ reading.name }}</a>
-      {% else %}
-        {{ reading.name }}
-      {% endif %}
-
-      {% if reading.author %}
-        by {{reading.author}}
-      {% endif %}
-      {% if reading.venue %}
-        in <i>{{reading.venue}}</i>
-      {% endif %}
-      {% if reading.year %}
-        <i>{{reading.year}}</i>
-      {% endif %}
-      {% if reading.note %}
-        <br/>
-        <small class="dark-gray">{{reading.note}}</small>
-      {% endif %}
-      </li>
-    {% endfor %}
-
-  </ul>
-  </div>
-</div>
-{% endfor %}
 
 # Syllabus
 
