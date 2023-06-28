@@ -1,17 +1,17 @@
 ---
 layout: research
-title: 二进制翻译组
+title: Heterogeneous Computing
 description: description
 advisors:
-  - 张福新
+  - Fuxin Zhang
 maintainers:
-  - 牛根
+  - Gen Niu
 contributors:
-  - 李欣宇
-  - 牛根
+  - Xinyu Li
+  - Gen Niu
 date: 2023-06-26
-permalink: research/binarytranslation
-lang: zh
+permalink: research/heterogeneous
+lang: en
 ---
 
 ## Anything want to say

@@ -1,6 +1,6 @@
 ---
 layout: research
-title: 二进制翻译组
+title: 新型操作系统组
 description: description
 advisors:
   - 张福新
@@ -10,7 +10,7 @@ contributors:
   - 李欣宇
   - 牛根
 date: 2023-06-26
-permalink: research/binarytranslation
+permalink: research/operatingsystem
 lang: zh
 ---
 
