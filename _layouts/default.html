@@ -8,7 +8,7 @@
           class="w-100 mw8 ph4-l ph3 center pt2 pb3 flex items-baseline flex flex-wrap"
         >
           <a href="{{ '/' | relative_url }}" class="dib f2 f3-ns fw6 link black hover-cas-red center-s pb3 pr3">
-            CMU DIG
+            {{ site.data.global[site.active_lang]["title"] }}
             <picture>
               <source
                 srcset="{{ '/assets/logo-light.svg' | relative_url }}"
@@ -57,7 +57,7 @@
             <div class="tc ml3-m ml4-l">
               <a
                 class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cas-red link dib"
-                href="https://github.com/cmudig"
+                href="{{ 'https://github.com/' | append: site.github_username }}"
                 ><i class="fab fa-github mr1"></i>GitHub</a
               >
 

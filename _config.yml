@@ -12,7 +12,6 @@ email: dig@cmu.edu
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dig.cmu.edu" # the base hostname & protocol for your site, e.g. http://example.com
 page_url: "https://github.com/cmudig/cmudig.github.io/edit/main/"
-twitter_username: cmudig
 github_username: cmudig
 
 sass:
