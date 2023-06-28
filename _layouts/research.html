@@ -1,0 +1,87 @@
+---
+layout: default
+---
+
+<div class="pv4 bg-near-white">
+  <div class="w-100 mw8 ph4-l ph3 pv4-l pv3 center">
+    <h1 class="f2 lh-title measure mt3">
+      {{ page.title }}
+    </h1>
+    {%if page.description %}
+    <p class="f4 measure lh-copy">
+      {{ page.description }}
+    </p>
+    {% endif %}
+    <div class="pv1">
+      {% if page.website %}
+      <a href="{{ page.website }}" class="black link hover-cas-red mr3 dib">
+        <i class="fas fa-link f6" aria-hidden="true"></i> {{ site.data.research[site.active_lang]["homepage"] }}
+      </a>
+      {% endif %}
+      {% if page.email %}
+      <a href="mailto:{{ page.email }}" class="black link hover-cas-red mr3 dib">
+        <i class="fas fa-envelope f6" aria-hidden="true"></i> {{ page.email }}
+      </a>
+      {% endif %}
+      {% if page.github %}
+      <a href="{{ page.github }}" class="black link hover-cas-red mr3 dib">
+        <i class="fab fa-github f6" aria-hidden="true"></i> Github
+      </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+  
+<div class="w-100 mw8 ph4-l ph3 center mt4">
+  <div class="flex flex-row flex-wrap justify-between">
+    <div class="w-70-ns w-100">
+    {{ content }}
+    </div>
+    <div class="w-20-ns w-100">
+      {% if page.maintainers.size %}
+      <h3>{{ site.data.research[site.active_lang]["maintainer"] }}</h3>
+      <div class="flex flex-row flex-wrap items-start pv1">
+        {% for maintainer in page.maintainers %}
+        {% assign people = site.people | where:"name", maintainer | first %}
+        <a href="{{ people.url | relative_url }}" class="black link hover-cas-red mt3 mr4 dib">
+          <div class="flex flex-column items-center">
+            <picture>
+              <source srcset="{{ people.image | relative_url }}"></source>
+              <source srcset="{{ 'assets/person.png' | relative_url }}"></source>
+              <img class="br-100 w3 h3 mb1" alt="Picture of {{ name }}" />
+            </picture>
+            <div class="black mw4 tc">{% include person name=name %}</div>
+          </div>
+          <div style="text-align: center">{{ maintainer }}</div>
+        </a>
+        {% endfor %}
+      </div>
+      {% endif %}
+      {% if page.contributors.size %}
+      <h3>{{ site.data.research[site.active_lang]["contributor"] }}</h3>
+      <div class="flex flex-row flex-wrap items-start pv1">
+        {% for contributor in page.contributors %}
+        {% assign people = site.people | where:"name", contributor | first %}
+        <a href="{{ people.url | relative_url }}" class="black link hover-cas-red mt3 mr4 dib">
+          <div class="flex flex-column items-center">
+            <picture>
+              <source srcset="{{ people.image | relative_url }}"></source>
+              <source srcset="{{ 'assets/person.png' | relative_url }}"></source>
+              <img class="br-100 w3 h3 mb1" alt="Picture of {{ name }}" />
+            </picture>
+            <div class="black mw4 tc">{% include person name=name %}</div>
+          </div>
+          <div style="text-align: center">{{ contributor }}</div>
+        </a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  {% if page.date %}
+  <p class="measure cas-gray mt1">
+    {{ site.data.people[site.active_lang]["publish"] }}
+    <time datetime="{{ page.date }}">{{ page.date | date: "%Y-%m-%d" }}</date>
+  </p>
+  {% endif %}
+</div>

@@ -26,6 +26,8 @@ collections:
     output: true
   courses:
     output: true
+  research:
+    output: true
 
 languages: ["zh", "en"]
 default_lang: "zh"
