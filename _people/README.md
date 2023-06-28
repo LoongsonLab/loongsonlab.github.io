@@ -25,7 +25,7 @@ lang: zh/en
 Your context...
 ```
 
-We have the following roles: `Professor`, `Asst. Professor`, `PhD Student`, `Masters Student`, `Undergraduate Student`, `Visiting Student` and `Postdoc`. You can also add a new role if it makes sense (`roles` in file `team/index.LANG.html`).
+We have the following roles: `Professor`, `Asst. Professor`, `PhD Student`, `Masters Student`, `Undergraduate Student`, `Visiting Student`, `Engineer` and `Postdoc`. You can also add a new role if it makes sense (`roles` in file `team/index.LANG.html`).
 
 Add a picture, add it to [the assets directory](../assets/people) with around `300x300` pixels as a JPEG image. The height and width of the image should be equal, so it is a square.
 
