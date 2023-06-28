@@ -35,6 +35,8 @@ exclude_from_localization: ["assets"]
 parallel_localization: true
 lang_from_path: true
 
+timezone: Asia/Shanghai
+
 # Build settings
 markdown: kramdown
 plugins:
