@@ -38,6 +38,25 @@ layout: default
     {{ content }}
     </div>
     <div class="w-20-ns w-100">
+      {% if page.advisors.size %}
+      <h3>{{ site.data.research[site.active_lang]["advisor"] }}</h3>
+      <div class="flex flex-row flex-wrap items-start pv1">
+        {% for advisor in page.advisors %}
+        {% assign people = site.people | where:"name", advisor | first %}
+        <a href="{{ people.url | relative_url }}" class="black link hover-cas-red mt3 mr4 dib">
+          <div class="flex flex-column items-center">
+            <picture>
+              <source srcset="{{ people.image | relative_url }}"></source>
+              <source srcset="{{ 'assets/person.png' | relative_url }}"></source>
+              <img class="br-100 w3 h3 mb1" alt="Picture of {{ name }}" />
+            </picture>
+            <div class="black mw4 tc">{% include person name=name %}</div>
+          </div>
+          <div style="text-align: center">{{ advisor }}</div>
+        </a>
+        {% endfor %}
+      </div>
+      {% endif %}
       {% if page.maintainers.size %}
       <h3>{{ site.data.research[site.active_lang]["maintainer"] }}</h3>
       <div class="flex flex-row flex-wrap items-start pv1">

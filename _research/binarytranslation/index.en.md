@@ -2,6 +2,8 @@
 layout: research
 title: Binary Translation
 description: description
+advisors:
+  - Fuxin Zhang
 maintainers:
   - Gen Niu
 contributors:

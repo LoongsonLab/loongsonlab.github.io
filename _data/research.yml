@@ -1,8 +1,10 @@
 zh:
   homepage: "主页"
+  advisor: "指导教师"
   maintainer: "负责人"
   contributor: "参与人"
 en:
   homepage: "Homepage"
+  advisor: "Advisor(s)"
   maintainer: "Maintainer(s)"
   contributor: "Contributor(s)"

@@ -2,6 +2,8 @@
 layout: research
 title: 二进制翻译
 description: description
+advisors:
+  - 张福新
 maintainers:
   - 牛根
 contributors:
