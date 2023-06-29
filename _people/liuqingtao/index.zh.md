@@ -4,7 +4,7 @@ name: 刘庆涛
 image: /assets/people/liuqingtao.jpg
 role: 硕士研究生
 blog: 
-email: example@example.com
+email: qtliu@mail.ustc.edu.cn
 github: https://github.com/GooTal
 alumni: false
 advisors:
