@@ -16,4 +16,4 @@ lang: en
 
 ## Anything want to say
 
-What is the joy of seeking perfection in everything.
+What is the joy of seeking perfection in everything ?
