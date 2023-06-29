@@ -27,7 +27,7 @@ Interaction Institute at Carnegie Mellon University.
 ## Logo
 
 The DIG logo is the [CMU macot Scotty](https://athletics.cmu.edu/athletics/mascot/index) digging.
-Find out more in our [launch post]({% post_url 2020-02-08-logo %}).
+Find out more in our [launch post]({% post_url 2023-06-29-hello-lslab %}).
 
 ## Our Values
 

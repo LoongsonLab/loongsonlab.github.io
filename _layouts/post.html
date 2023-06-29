@@ -7,7 +7,7 @@ layout: page
     {{ content }}
     {% if page.studyLink %}
     <a href="{{page.studyLink}}" class="black link hover-cas-red mr3 dib">
-      <span class="cta">Participate</span>
+      <span class="cta">{{- site.data.post[site.active_lang]['participate'] -}}</span>
     </a>
     {%endif%}
   </div> 

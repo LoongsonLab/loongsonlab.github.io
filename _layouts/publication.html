@@ -30,7 +30,7 @@ layout: default
 
     {% if page.venue %}
       <div class="mt3">
-        Published at
+        {{ site.data.publication[site.active_lang]['publish'] }}
         {% if page.venue_url %}
           <a href="{{ page.venue_url }}">
         {% endif %}
@@ -82,12 +82,14 @@ layout: default
       {% endif %}
       {% if page.link %}
         <li class="mt2"><a href="{{ page.link }}" class="black link hover-cas-red">
-          <i class="fas fa-link" aria-hidden="true"></i> Project
+          <i class="fas fa-link" aria-hidden="true"></i>
+          {{ site.data.publication[site.active_lang]['project'] }}
         </a></li>
       {% endif %}
       {% if page.blog %}
         <li class="mt2"><a href="{{ page.blog }}" class="black link hover-cas-red">
-          <i class="fas fa-newspaper" aria-hidden="true"></i> Article
+          <i class="fas fa-newspaper" aria-hidden="true"></i>
+          {{ site.data.publication[site.active_lang]['article'] }}
         </a></li>
       {% endif %}
       {% if page.arxiv %}
@@ -97,17 +99,20 @@ layout: default
       {% endif %}
       {% if page.video %}
         <li class="mt2"><a href="{{ page.video }}" class="black link hover-cas-red">
-          <i class="fas fa-film" aria-hidden="true"></i> Video
+          <i class="fas fa-film" aria-hidden="true"></i>
+          {{ site.data.publication[site.active_lang]['video'] }}
         </a></li>
       {% endif %}
       {% if page.recording %}
         <li class="mt2"><a href="{{ page.recording }}" class="black link hover-cas-red">
-          <i class="fas fa-video" aria-hidden="true"></i> Recording
+          <i class="fas fa-video" aria-hidden="true"></i>
+          {{ site.data.publication[site.active_lang]['recording'] }}
         </a></li>
       {% endif %}
       {% if page.slides %}
         <li class="mt2"><a href="{{ page.slides }}" class="black link hover-cas-red">
-          <i class="fas fa-window-maximize" aria-hidden="true"></i> Slides
+          <i class="fas fa-window-maximize" aria-hidden="true"></i>
+          {{ site.data.publication[site.active_lang]['slides'] }}
         </a></li>
       {% endif %}
       {% if page.doi %}

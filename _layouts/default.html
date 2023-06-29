@@ -36,22 +36,22 @@
               <a
                 class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cas-red link dib"
                 href="{{ '/about' | relative_url }}"
-                >{{ site.data.head[site.active_lang]["about"] }}</a
+                >{{- site.data.head[site.active_lang]["about"] -}}</a
               >
               <a
                 class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cas-red link dib"
                 href="{{ '/team' | relative_url }}"
-                >{{ site.data.head[site.active_lang]["team"] }}</a
+                >{{- site.data.head[site.active_lang]["team"] -}}</a
               >
               <a
                 class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cas-red link dib"
                 href="{{ '/publications' | relative_url }}"
-                >{{ site.data.head[site.active_lang]["publications"] }}</a
+                >{{- site.data.head[site.active_lang]["publications"] -}}</a
               >
               <a
                 class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cas-red link dib"
                 href="{{ '/news' | relative_url }}"
-                >{{ site.data.head[site.active_lang]["news"] }}</a
+                >{{- site.data.head[site.active_lang]["news"] -}}</a
               >
             </div>
             <div class="tc ml3-m ml4-l">
@@ -97,14 +97,14 @@
         <div class="flex flex-row-ns flex-column">
           <div class="w-50-ns">
             <div class="pv2">
-              {{ site.data.foot[site.active_lang]["greet"] }}
+              {{- site.data.foot[site.active_lang]["greet"] -}}
             </div>
 
             <div class="pv2 footer-note">
-              {{ site.data.foot[site.active_lang]["lab_name"] }}
+              {{- site.data.foot[site.active_lang]["lab_name"] -}}
             </div>
             <div class="pv2">
-              {{ site.data.foot[site.active_lang]["address"] }}
+              {{- site.data.foot[site.active_lang]["address"] -}}
             </div>
             <div class="pv2">
               <a
@@ -138,17 +138,17 @@
             <ul class="list pl0">
               <li>
                 <a href="{{ site.data.foot[site.active_lang]['loongson_url'] }}" class="link white dim pv1 dib"
-                  >{{ site.data.foot[site.active_lang]["loongson_link"] }}</a
+                  >{{- site.data.foot[site.active_lang]["loongson_link"] -}}</a
                 >
               </li>
               <li>
                 <a href="{{ site.data.foot[site.active_lang]['ict_url'] }}" class="link white dim pv1 dib"
-                  >{{ site.data.foot[site.active_lang]["ict_link"] }}</a
+                  >{{- site.data.foot[site.active_lang]["ict_link"] -}}</a
                 >
               </li>
               <li>
                 <a href="{{ site.data.foot[site.active_lang]['ucas_url'] }}" class="link white dim pv1 dib"
-                  >{{ site.data.foot[site.active_lang]["ucas_link"] }}</a
+                  >{{- site.data.foot[site.active_lang]["ucas_link"] -}}</a
                 >
               </li>
             </ul>

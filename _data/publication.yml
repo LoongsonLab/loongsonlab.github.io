@@ -1,0 +1,14 @@
+zh:
+  publish: "发布在"
+  project: "项目链接"
+  article: "博客链接"
+  video:   "视频链接"
+  recording: "录像链接"
+  slides:  "幻灯片"
+en:
+  publish: "Published at"
+  project: "Project"
+  article: "Article"
+  video:   "Video"
+  recording: "Recording"
+  slides:  "Slides"

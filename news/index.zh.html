@@ -1,0 +1,14 @@
+---
+layout: page
+title: 新闻
+subtitle: 这里有我们最新的动向、有趣的活动以及一些成果的展示
+description: Check out the latest work, events, and studies from the Loongson Lab.
+permalink: news/
+lang: zh
+---
+
+<div>
+  {% for post in site.posts %}
+    {% include post-preview.html post=post %}
+  {% endfor %}
+</div>

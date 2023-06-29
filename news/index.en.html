@@ -1,0 +1,14 @@
+---
+layout: page
+title: News
+subtitle: Check out our latest work, interesting events, and ongoing studies!
+description: Check out the latest work, events, and studies from the Loongson Lab.
+permalink: news/
+lang: en
+---
+
+<div>
+  {% for post in site.posts %}
+    {% include post-preview.html post=post %}
+  {% endfor %}
+</div>

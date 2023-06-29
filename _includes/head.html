@@ -2,7 +2,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="application-name" content="{{ site.data.global[site.active_lang]['title'] }}" />
+  <meta name="application-name" content="{{- site.data.global[site.active_lang]['title'] -}}" />
   <meta name="theme-color" content="#b00" />
 
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
@@ -27,7 +27,7 @@
   <link
     rel="alternate"
     type="application/rss+xml"
-    title="{{ site.data.global[site.active_lang]['title'] }}"
+    title="{{- site.data.global[site.active_lang]['title'] -}}"
     href="{{ '/feed.xml' | absolute_url }}"
   />
 

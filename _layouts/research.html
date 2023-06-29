@@ -39,7 +39,7 @@ layout: default
     </div>
     <div class="w-20-ns w-100">
       {% if page.advisors.size %}
-      <h3>{{ site.data.research[site.active_lang]["advisor"] }}</h3>
+      <h3>{{- site.data.research[site.active_lang]["advisor"] -}}</h3>
       <div class="flex flex-row flex-wrap items-start pv1">
         {% for advisor in page.advisors %}
         {% assign people = site.people | where:"name", advisor | first %}
@@ -58,7 +58,7 @@ layout: default
       </div>
       {% endif %}
       {% if page.maintainers.size %}
-      <h3>{{ site.data.research[site.active_lang]["maintainer"] }}</h3>
+      <h3>{{- site.data.research[site.active_lang]["maintainer"]-}}</h3>
       <div class="flex flex-row flex-wrap items-start pv1">
         {% for maintainer in page.maintainers %}
         {% assign people = site.people | where:"name", maintainer | first %}
@@ -77,7 +77,7 @@ layout: default
       </div>
       {% endif %}
       {% if page.contributors.size %}
-      <h3>{{ site.data.research[site.active_lang]["contributor"] }}</h3>
+      <h3>{{- site.data.research[site.active_lang]["contributor"] -}}</h3>
       <div class="flex flex-row flex-wrap items-start pv1">
         {% for contributor in page.contributors %}
         {% assign people = site.people | where:"name", contributor | first %}

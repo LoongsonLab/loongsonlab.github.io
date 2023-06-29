@@ -33,7 +33,7 @@ layout: default
                   <img class="br-100 w3 h3 mb1" alt="Picture of {{ name }}" />
                 </picture>
                 <div class="black">{{ name }}</div>
-                <div class="gray">{{ site.data.course[site.active_lang]['instructor'] }}</div>
+                <div class="gray">{{- site.data.course[site.active_lang]['instructor'] -}}</div>
               </div>
             </a>
           {% endfor %}
@@ -50,7 +50,7 @@ layout: default
                 <img class="br-100 w3 h3 mb1" alt="Picture of {{ name }}" />
               </picture>
               <div class="black">{{ name }}</div>
-              <div class="gray">{{ site.data.course[site.active_lang]['tas'] }}</div>
+              <div class="gray">{{- site.data.course[site.active_lang]['tas'] -}}</div>
             </div>
           </a>
         {% endfor %}
@@ -60,7 +60,7 @@ layout: default
   </div>
 
   <div class="w-100 mw8 ph4-l ph3 center mt4">
-  <h2>{{ site.data.course[site.active_lang]['schedule'] }}</h2>
+  <h2>{{- site.data.course[site.active_lang]['schedule'] -}}</h2>
     {% for lecture in page.schedule %}
     <div class="flex mt1">
       <span class="w-10 gray">{{ lecture.date | date: "%a, %b %d" }}</span>
@@ -71,13 +71,13 @@ layout: default
           </span>
     
           {% if lecture.discussion %}
-            <a class="fr" href="{{ lecture.discussion }}" title="{{ site.data.course[site.active_lang]['discussion'] }}">
+            <a class="fr" href="{{ lecture.discussion }}" title="{{- site.data.course[site.active_lang]['discussion'] -}}">
               <i class="fas fa-comments"></i>
             </a>
           {% else %}
             <span class="fr cas-gray">
               <i class="fas fa-comments" aria-hidden="true" 
-                title="{{ site.data.course[site.active_lang]['nodiscussion'] }}"></i>
+                title="{{- site.data.course[site.active_lang]['nodiscussion'] -}}"></i>
             </span>
           {% endif %}
           {% if lecture.slides %}
@@ -87,7 +87,7 @@ layout: default
             </a>
           {% else %}
             <span class="fr mr2 cas-gray"><i class="fas fa-window-maximize" aria-hidden="true"
-              title="{{ site.data.course[site.active_lang]['noslides'] }}"></i>
+              title="{{- site.data.course[site.active_lang]['noslides'] -}}"></i>
               {{ site.data.course[site.active_lang]['slides'] }}
             </span>
           {% endif %}

@@ -12,7 +12,10 @@ layout: default
     {% endif %}
     {% if page.date %}
       <p class="f4 measure lh-copy mt1">
-        Published on <time datetime="{{ page.date }}">{{ page.date | date: "%B %-d, %Y" }}</date>
+        {{ site.data.post[site.active_lang]["publish"] }}
+        <time datetime="{{ page.date }}">
+          {{ page.date | date: site.data.global[site.active_lang]['date_format'] }}
+        </date>
       </p>
     {% endif %}
   </div>

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Hello CMU Data Interaction Group"
-date: 2019-10-01 21:19:29 -0700
+title: "欢迎来到龙芯实验室"
+date: 2023-06-29 14:41:00 +0800
 lang: zh
 ---
 
