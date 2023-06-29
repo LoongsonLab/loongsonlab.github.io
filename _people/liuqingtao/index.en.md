@@ -3,9 +3,9 @@ layout: people
 name: QINGTAO LIU
 image: /assets/people/liuqingtao.jpg
 role: Masters Student
-blog: https://www.baidu.com
-email: example@example.com
-github: https://www.baidu.com
+blog: 
+email: qtliu@mail.ustc.edu.cn
+github: https://github.com/GooTal
 alumni: false
 advisors:
     - Fuxin Zhang
@@ -16,4 +16,4 @@ lang: en
 
 ## Anything want to say
 
-Nothing, do not want to say anything.
+Enthusiastic about Operating System.
