@@ -17,7 +17,9 @@ layout: default
     <div class="flex flex-row flex-wrap items-start mt1">
     {% for name in page.authors %} {% assign author = site.people |
     where:"name", name | first %}
-      <div class="flex flex-column items-center mt3 mr4">
+    <a href="{{ author.url | relative_url | default: 'javascript:;' }}"
+    class="black link hover-cas-red mt3 mr4">
+      <div class="flex flex-column items-center">
         <picture>
           <source srcset="{{ author.image | relative_url }}"></source>
           <source srcset="{{ 'assets/person.png' | relative_url }}"></source>
@@ -25,6 +27,7 @@ layout: default
         </picture>
         <div class="black mw4 tc">{% include person name=name %}</div>
       </div>
+    </a>
     {% endfor %}
     </div>
 
