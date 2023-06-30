@@ -62,13 +62,6 @@ layout: default
   {% if page.poster %}
   <img src="{{ page.poster | relative_url }}" alt="Poster image" class="mw-100" style="max-height: 600px">
   {% endif %}
-  {% if page.tweet %}
-    <p class="measure-wide">
-      <a href="https://twitter.com/intent/tweet?text={{ page.tweet }}&url={{ site.production_url }}/pagelications/%23{{ anchor }}&via=cmudig&related=cmudig" class="cas-dark-blue">
-        <i class="fab fa-twitter"></i> <span class="i">{{ page.tweet }}</span>
-      </a>
-    </p>
-  {% endif %}
 
   {% assign page_content = content %}
   {% if page_content != "" %}
@@ -76,7 +69,7 @@ layout: default
   {% endif %}
 
   {% if page.link or page.pdf or page.video or page.blog or page.slides or page.doi %}
-  <h2>Materials</h2>
+  <h2>{{ site.data.publication[site.active_lang]['materials'] }}</h2>
     <ul class="list pl0">
       {% if page.pdf %}
         <li class="mt2"><a href="{{ page.pdf }}" class="black link hover-cas-red">

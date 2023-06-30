@@ -5,6 +5,7 @@ zh:
   video:   "视频链接"
   recording: "录像链接"
   slides:  "幻灯片"
+  materials: "附件"
 en:
   publish: "Published at"
   project: "Project"
@@ -12,3 +13,4 @@ en:
   video:   "Video"
   recording: "Recording"
   slides:  "Slides"
+  materials: "Materials"
