@@ -2,10 +2,13 @@
 layout: post
 title: "Hello Loongson Lab"
 date: 2023-06-29 14:41:00 +0800
+excerpt_separator: <!--more-->
 lang: en
 ---
 
 This is the first article in the lab, as is traditional: **Hello World!**
+
+<!--more-->
 
 The lab website could not have been created without the efforts of everyone in the lab.
 Thanks to [Benyi Xie]({{ 'people/xiebenyi' | relative_url }}) for registering the `github` organization account;
