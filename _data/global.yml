@@ -3,8 +3,10 @@ zh:
   notranslation: "对不起，本页面无中文版。"
   date_format: "%F"
   continue_reading: "继续阅读..."
+  construct: "对不起，该网页还在建设中..."
 en:
   title: "LoongsonLab"
   notranslation: "Sorry, this page is not available in this language."
   date_format: "%B %-d, %Y"
   continue_reading: "continue reading..."
+  construct: "Sorry, This page is still under construction..."

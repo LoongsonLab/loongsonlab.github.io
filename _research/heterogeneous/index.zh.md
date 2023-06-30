@@ -12,6 +12,7 @@ contributors:
 date: 2023-06-26
 permalink: research/heterogeneous
 lang: zh
+construct: true
 ---
 
 ## Anything want to say

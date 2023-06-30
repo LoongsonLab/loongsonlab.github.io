@@ -5,6 +5,7 @@ subtitle: Learn more about the Data Interaction Group at Carnegie Mellon Univers
 description: Learn more about the Data Interaction Group at Carnegie Mellon University.
 permalink: about/
 lang: en
+construct: true
 ---
 
 ## What Motivates Us

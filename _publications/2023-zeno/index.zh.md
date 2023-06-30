@@ -30,6 +30,7 @@ pdf: https://arxiv.org/pdf/2302.04732.pdf
 arxiv: "2302.04732"
 awards:
   - Best Paper Award
+construct: true
 ---
 
 ## 摘要

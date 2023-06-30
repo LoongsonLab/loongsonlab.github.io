@@ -3,6 +3,7 @@
 Create a new `KEY` folder in `_research` with a unique name for you.
 Then in the folder, you can create each language file by using `index.LANG.md`.
 Finally, fill it with the following content.
+Note that, `construct` is used to mark this page is under construction.
 
 ## Create the Markdown file
 
@@ -26,6 +27,7 @@ contributors:
 date: YYYY-MM-DD
 permalink: research/KEY
 lang: zh/en
+construct: true/false
 ---
 
 ## Something...

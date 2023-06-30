@@ -81,7 +81,20 @@
         {% if page.lang != site.active_lang %}
         <div class="bg-cas-gray">
           <div class="w-100 mw8 ph4-l ph3 center pv2 flex items-baseline flex flex-wrap">
-              {% include translation.html %}
+            <div class="mv1">
+              <i class="fas fa-circle-info mr1"></i>
+              {{ site.data.global[site.active_lang]["notranslation"] }}
+            </div>
+          </div>
+        </div>
+        {% endif %}
+        {% if page.construct %}
+        <div class="bg-cas-gray">
+          <div class="w-100 mw8 ph4-l ph3 center pv2 flex items-baseline flex flex-wrap">
+            <div class="mv1">
+              <i class="fas fa-person-digging mr1"></i>
+              {{ site.data.global[site.active_lang]["construct"] }}
+            </div>
           </div>
         </div>
         {% endif %}

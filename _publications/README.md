@@ -3,7 +3,8 @@
 ## Create the Markdown file
 
 Create a new `KEY` folder in the `_publications` directory. The key for the filename should be `YEAR-TITLE` where title is a short key for your paper. Then in the folder, you can create each language file by using `index.LANG.md`.
-Finally, Complete the file with the following basic format. Note that `permalink` needs to change the `KEY` to the folder name.
+Finally, Complete the file with the following basic format. Note that `permalink` needs to change the `KEY` to the folder name.\
+Note that, `construct` is used to mark this page is under construction.
 
 ```md
 ---
@@ -38,6 +39,7 @@ link: https://...
 pdf: ...
 recording: ...
 slides: ...
+construct: true/false
 ---
 ## Abstract
 
