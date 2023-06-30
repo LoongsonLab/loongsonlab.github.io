@@ -98,6 +98,30 @@
           </div>
         </div>
         {% endif %}
+        {% if page.info %}
+        <div class="bg-info-blue">
+          {% for info in page.info %}
+          <div class="w-100 mw8 ph4-l ph3 center pv2 flex items-baseline flex flex-wrap">
+            <div class="mv1">
+              <i class="fas fa-circle-info mr1"></i>
+              {{ info }}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+        {% if page.warning %}
+        <div class="bg-warning-yellow">
+          {% for warning in page.warning %}
+          <div class="w-100 mw8 ph4-l ph3 center pv2 flex items-baseline flex flex-wrap">
+            <div class="mv1">
+              <i class="fas fa-triangle-exclamation mr1"></i>
+              {{ warning }}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
       </header>
 
       <main>

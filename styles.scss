@@ -35,6 +35,9 @@ body {
 
   --pink: #faa;
 
+  --info-blue: #cfe2ff;
+  --warning-yellow: #fff3cd;
+
   --text-color: #000;
 }
 
@@ -62,6 +65,12 @@ body {
 }
 .bg-cas-blue {
   background-color: var(--cas-blue);
+}
+.bg-info-blue {
+  background-color: var(--info-blue);
+}
+.bg-warning-yellow {
+  background-color: var(--warning-yellow);
 }
 
 .b--cas-red {

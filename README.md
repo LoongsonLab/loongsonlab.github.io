@@ -28,3 +28,23 @@ To add specific content, follow the README guides in the corresponding directori
 * [Add a post](_posts)
 * [Add a course](_courses)
 * [Add a research area](_research)
+
+!!! warning
+    Also, this is a multi-language website. So you will need to create Markdown files for each language.
+    If you only have the energy to maintain one language, then please **DO NOT** create "another language" file.
+    The site will redirect other languages pages to the maintained language pages automatically.
+
+## General Header
+
+```md
+layout: default (Please not modified)
+permalink: /
+lang: zh/en (Language)
+construct: true (Page under construction, optional)
+info: (Information bar, optional)
+  - ...
+  - ...
+warning: (Warning bar, optional)
+  - ...
+  - ...
+```
