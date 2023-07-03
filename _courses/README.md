@@ -20,8 +20,8 @@ tas:
   - ta1
   - ta2
   - ...
-time: ...
-location: ...
+time: ... (optional)
+location: ... (optional)
 permalink: courses/KEY
 lang: zh/en
 
