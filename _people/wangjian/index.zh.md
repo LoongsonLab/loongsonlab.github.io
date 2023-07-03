@@ -5,7 +5,6 @@ image: /assets/people/wangjian.jpg
 role: 研究员（正高级工程师）
 blog: http://www.ict.cas.cn/sourcedb_2018_ict_cas/cn/jssrck/200909/t20090917_2496730.html
 email: jw@ict.ac.cn
-github: none
 alumni: false
 date: 2023-07-03
 permalink: people/wangjian
@@ -21,20 +20,23 @@ lang: zh
 
 ## 主要论著
 
-### 期刊文章:
+### 期刊文章
+
 1. Weiwu Hu, Jian Wang, Xiang Gao, Yunji Chen, Qi Liu, Guojie Li, Godson-3: A Scalable Multicore RISC Processor with X86 Emulation, IEEE Micro, 29(2): 17-29 March/April 2009
 2. Weiwu Hu, Jian Wang, Making Effective Decisions in Computer Architects' Real-World: Lessons and Experiences with Godson-2 Processor Designs, Journal of Computer Science and Technology, 23(4): 620-632 July 2008
 3. D. Huan, Z. Li, J. Wang, et al. Adaptive Stack Cache with Fast Address Generation[J]. Journal of Computer Research and Development, 2007, 44(1):169-176
 4. M. Wu, F. Zhang, W. Lin, X. Xu, N, Yuan, J Wang, Critical Techniques of System Optimization for Godson-2 Processor[J]. Journal of Computer Research and Development, 2006, 43(6): 980-986.
 
-### 会议文章：
+### 会议文章
+
 1.  J. Fu, G. Jin, L. Zhang, J. Wang. CAOS: Combined analysis with online sifting for dynamic compilation systems[C]. 2016 ACM International Conference on Computing Frontiers – Proceedings. Como, Italy, 2016: 110-118.
 2. S. Hao, Q. Liu, L. Zhang, J. Wang. Processes Scheduling on Heterogeneous Multi-core Architecture with Hardware Support[C]. 2011 6th IEEE International Conference on Networking, Architecture, and Storage. Dalian, Liaoning, China, 2011:236-241.
 3. W. Hu, Q. Liu, J. Wang, et al. Efficient binary translation system with low hardware cost[C]. 2009 IEEE International Conference on Computer Design. Lake Tahoe, CA, United states, 2009:305-312.
 4. J Wang, L Shen, JF Chao, An efficient method of fuzzy rules generation, 1997 IEEE International Conference on Intelligent Processing Systems, Beijing, China, 1997.10.28-10.31
 
 
-### 专利：
+### 专利
+
 1. 傅杰, 靳国杰, 高翔, 王剑. 解释器访存优化方法及装置: CN201510053110.9 [P]. 2016-10-05.
 2. 傅杰, 靳国杰, 高翔, 王剑. 动态编译方法及装置: CN201410727430.3 [P]. 2016-06-29.
 
