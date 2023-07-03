@@ -2,7 +2,7 @@
 layout: people
 name: 张福新
 image: /assets/people/zhangfuxin.jpg
-role: 正研究员
+role: 研究员（正高级工程师）
 blog: http://people.ucas.edu.cn/~fxzhang
 email: fxzhang@ict.ac.cn
 github: https://github.com/foxsen
