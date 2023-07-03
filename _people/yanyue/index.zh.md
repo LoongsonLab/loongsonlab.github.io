@@ -3,17 +3,19 @@ layout: people
 name: 晏悦
 image: /assets/people/yanyue.jpg
 role: 硕士研究生
-blog: https://www.baidu.com
-email: example@example.com
-github: https://www.baidu.com
+blog: https://jensen-yan.github.io/
+email: yanyue171@mails.ucas.ac.cn
+github: https://github.com/jensen-yan
 alumni: false
 advisors:
-    - 张福新
+    - 王剑
 date: 2023-06-26
 permalink: people/yanyue
 lang: zh
 ---
 
-## 有什么话想说的
+## 关于我
 
-没有，我一句都不想说
+我是晏悦，目前就读于中国科学院大学-计算所-龙芯实验室，目前是研究生二年级。
+
+我熟悉计算机体系结构和操作系统，在硕士期间研究异构系统和二进制翻译方向。

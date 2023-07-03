@@ -3,17 +3,19 @@ layout: people
 name: YUE YAN
 image: /assets/people/yanyue.jpg
 role: Masters Student
-blog: https://www.baidu.com
-email: example@example.com
-github: https://www.baidu.com
+blog: https://jensen-yan.github.io/
+email: yanyue171@mails.ucas.ac.cn
+github: https://github.com/jensen-yan
 alumni: false
 advisors:
-    - Fuxin Zhang
+    - Jian Wang
 date: 2023-06-26
 permalink: people/yanyue
 lang: en
 ---
 
-## Anything want to say
+## About Me
 
-Nothing, do not want to say anything.
+My name is Yan Yue. I am currently studying at UCAS-ICT-LoongsonLab. I am currently a second-year graduate student.
+
+I am familiar with computer architecture and operating systems, and studied heterogeneous systems and binary translation during my master's degree.
