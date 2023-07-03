@@ -3,6 +3,9 @@ layout: post
 title: "欢迎来到龙芯实验室"
 date: 2023-06-29 14:41:00 +0800
 excerpt_separator: <!--more-->
+author:
+  - 胡起
+  - 谢本壹
 lang: zh
 info:
   - 该文章包含AI生成内容，请仔细鉴别

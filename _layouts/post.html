@@ -15,5 +15,27 @@ layout: page
   <div class="w-30-ns w-100">
     <img src="{{ page.side_image }}" alt="{{ post.side_image_alt | default: post.title }}" class="fr"/>
   </div>
-  {% endif %} 
+  {% endif %}
+
+  {% if page.author %}
+  <div class="{% if page.side_image %} w-60-ns {% endif %} w-100">
+    <h4>{{- site.data.post[site.active_lang]['author'] -}}</h4>
+    <div class="flex flex-row flex-wrap items-start mt1">
+      {% for name in page.author %} {% assign author = site.people |
+        where:"name", name | first %}
+        <a href="{{ author.url | relative_url | default: 'javascript:;' }}"
+          class="black link hover-cas-red mt3 mr4">
+          <div class="flex flex-column items-center">
+            <picture>
+              <source srcset="{{ author.image | relative_url }}"></source>
+              <source srcset="{{ 'assets/person.png' | relative_url }}"></source>
+              <img class="br-100 w3 h3 mb1" alt="Picture of {{ name }}" />
+            </picture>
+            <div class="black">{{ name }}</div>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
 </div>

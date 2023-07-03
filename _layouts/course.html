@@ -8,16 +8,17 @@ layout: default
       <h1 class="f2 lh-title measure mt3">
         {{ page.title }}
       </h1>
-      <div class="f4 measure lh-copy">
+      <div class="measure lh-copy">
         <div>{{ page.semester }} {{ page.year }}</div>
         {% if page.time %}
-        <div>
-          {{ page.time }} {% if page.location %} in {{ page.location }} {% endif
-          %}
-        </div>
+        <span class="mr2">
+          <i class="fas fa-clock"></i> {{ page.time }}
+        </span>
         {% endif %}
-        {% if page.office_hours_time %}
-        <div>Office hours: {{ page.office_hours_time }} in {{page.office_hours_location}} </div>
+        {% if page.location %}
+        <span class="mr2">
+          <i class="fas fa-location-dot"></i> {{ page.location }}
+        </span>
         {% endif %}
       </div>
       <div class="flex flex-column flex-row-l">

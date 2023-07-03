@@ -3,6 +3,8 @@ layout: post
 title: "Hello Loongson Lab"
 date: 2023-06-29 14:41:00 +0800
 excerpt_separator: <!--more-->
+author:
+  - Qi Hu
 lang: en
 ---
 

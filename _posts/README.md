@@ -14,6 +14,9 @@ studyLink: https://... (optional)
 excerpt_separator: <!--more--> (optional)
 side_image: "/assets/posts/*.png" (optional)
 side_image_alt: ... (optional)
+author: (optional)
+  - ...
+  - ...
 lang: zh/en
 ---
 
