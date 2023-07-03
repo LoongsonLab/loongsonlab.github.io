@@ -10,9 +10,9 @@ layout: people
 name: ...
 image: /assets/people/....jpg
 role: PhD Student
-blog: https://www.baidu.com
-email: example@example.com
-github: https://www.baidu.com
+blog: https://www.baidu.com (optional)
+email: example@example.com (optional)
+github: https://www.baidu.com (optional)
 alumni: true/false
 alumni_since: XXXX (when alumni: true)
 advisors:
