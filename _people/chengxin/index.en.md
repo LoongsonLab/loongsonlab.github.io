@@ -3,17 +3,19 @@ layout: people
 name: Xin Cheng
 image: /assets/people/chengxin.jpg
 role: PhD Student
-blog: https://www.baidu.com
-email: example@example.com
-github: https://www.baidu.com
+blog: https://github.com/ilo5u
+email: chengxin20g@ict.ac.cn
+github: https://github.com/ilo5u
 alumni: false
 advisors:
     - Fuxin Zhang
-date: 2023-06-26
+date: 2023-07-03
 permalink: people/chengxin
 lang: en
 ---
 
-## Anything want to say
+## Research
 
-Nothing, do not want to say anything.
+- Parallel Computing
+- Multi-cores Architecture
+- Hardware Thread-Level Speculation

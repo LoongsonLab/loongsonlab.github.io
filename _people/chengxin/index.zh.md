@@ -3,17 +3,19 @@ layout: people
 name: 程鑫
 image: /assets/people/chengxin.jpg
 role: 博士研究生
-blog: https://www.baidu.com
-email: example@example.com
-github: https://www.baidu.com
+blog: https://github.com/ilo5u
+email: chengxin20g@ict.ac.cn
+github: https://github.com/ilo5u
 alumni: false
 advisors:
     - 张福新
-date: 2023-06-26
+date: 2023-07-03
 permalink: people/chengxin
 lang: zh
 ---
 
-## 有什么话想说的
+## 研究方向
 
-没有，我一句都不想说
+- 并行计算
+- 多核架构
+- 硬件线程级推测并行系统
