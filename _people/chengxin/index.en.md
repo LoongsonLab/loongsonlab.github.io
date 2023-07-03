@@ -8,7 +8,7 @@ email: chengxin20g@ict.ac.cn
 github: https://github.com/ilo5u
 alumni: false
 advisors:
-    - Fuxin Zhang
+    - Jian Wang
 date: 2023-07-03
 permalink: people/chengxin
 lang: en

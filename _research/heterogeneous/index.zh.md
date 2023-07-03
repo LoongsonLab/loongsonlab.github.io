@@ -3,18 +3,17 @@ layout: research
 title: 异构计算组
 description: description
 advisors:
-  - 张福新
+  - 王剑
 maintainers:
-  - 牛根
+  - 李文青
 contributors:
-  - 李欣宇
-  - 牛根
-date: 2023-06-26
+  - 程鑫
+date: 2023-07-03
 permalink: research/heterogeneous
 lang: zh
 construct: true
 ---
 
-## Anything want to say
+## 研究课题
 
-Nothing, do not want to say anything.
+[硬件线程级推测并行系统](./thread-level-speculation/index.zh.md)
