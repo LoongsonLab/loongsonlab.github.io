@@ -1,7 +1,7 @@
 ---
 layout: research
 title: Heterogeneous Computing
-description: description
+description: I-Arch
 advisors:
   - Fuxin Zhang
 maintainers:

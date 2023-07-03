@@ -18,4 +18,4 @@ lang: zh
 
 - 并行计算
 - 多核架构
-- [硬件线程级推测并行系统](/research/heterogeneous/thread-level-speculation/index.zh.md)
+- [硬件线程级推测并行系统](/project/thread-level-speculation)

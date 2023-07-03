@@ -1,7 +1,7 @@
 ---
 layout: research
 title: 异构计算组
-description: description
+description: 新型体系结构
 advisors:
   - 王剑
 maintainers:
@@ -16,4 +16,4 @@ construct: true
 
 ## 研究课题
 
-[硬件线程级推测并行系统](./thread-level-speculation/index.zh.md)
+[硬件线程级推测并行系统](/project/thread-level-speculation)
