@@ -8,7 +8,7 @@ email: chengxin20g@ict.ac.cn
 github: https://github.com/ilo5u
 alumni: false
 advisors:
-    - 张福新
+    - 王剑
 date: 2023-07-03
 permalink: people/chengxin
 lang: zh
@@ -18,4 +18,4 @@ lang: zh
 
 - 并行计算
 - 多核架构
-- 硬件线程级推测并行系统
+- [硬件线程级推测并行系统](/research/heterogeneous/thread-level-speculation/index.zh.md)
