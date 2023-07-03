@@ -33,7 +33,6 @@ lang: en
 3. W. Hu, Q. Liu, J. Wang, et al. Efficient binary translation system with low hardware cost[C]. 2009 IEEE International Conference on Computer Design. Lake Tahoe, CA, United states, 2009:305-312.
 4. J Wang, L Shen, JF Chao, An efficient method of fuzzy rules generation, 1997 IEEE International Conference on Intelligent Processing Systems, Beijing, China, 1997.10.28-10.31
 
-
 ### 专利
 
 1. 傅杰, 靳国杰, 高翔, 王剑. 解释器访存优化方法及装置: CN201510053110.9 [P]. 2016-10-05.

@@ -66,7 +66,7 @@ construct: true
 - [GEM5配置（推荐额外安装libpng、graphviz库）](https://www.gem5.org/documentation/general_docs/building)
 - 项目正在开发的分支为[TinyTLS](http://foxsen.3322.org:33336/chengxin/speculative-cache.git)
 
-```
+```bash
   git clone http://foxsen.3322.org:33336/chengxin/speculative-cache.git HardwareTLS
   cd HardwareTLS && git submodule update --init --recursive
   scons build/TinyTLS/gem5.fast -j`nproc`
