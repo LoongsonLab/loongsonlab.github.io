@@ -13,6 +13,7 @@ date: 2023-07-03
 permalink: research/heterogeneous/thread-level-speculation
 lang: zh
 construct: true
+index_hide: true
 ---
 
 ## 线程级推测并行
