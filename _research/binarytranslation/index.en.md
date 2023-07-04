@@ -1,7 +1,7 @@
 ---
 layout: research
 title: Binary Translation
-description: description
+description: Through binary translation, applications of X86, ARM, RISC-V and other architectures are run on the Loongson processor. Combining hardware innovations in instruction set and processor design to achieve an efficient binary translation system that combines dynamic and static, software and hardware, seeking a breakthrough in both efficiency and completeness of the binary translation system.
 advisors:
   - Fuxin Zhang
 maintainers:
