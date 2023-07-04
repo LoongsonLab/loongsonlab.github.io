@@ -40,13 +40,16 @@ construct: true
     </p>
     <div class="flex flex-row-ns flex-wrap pt3">
       {% for research in site.research %}
-      <a href="{{ research.url | relative_url }}"
-        class="mr2-ns mv2 w-20-l w-40-m flex-auto shadow-4 pa3 br2">
-        <h3 class="f4 mt0">{{ research.title }}</h3>
-        <p class="measure lh-copy black">
-          {{ research.description }}
-        </p>
-      </a>
+        {% if research.permalink contains 'project' %}
+        {% else %}
+          <a href="{{ research.url | relative_url }}"
+            class="mr2-ns mv2 w-20-l w-40-m flex-auto shadow-4 pa3 br2">
+            <h3 class="f4 mt0">{{ research.title }}</h3>
+            <p class="measure lh-copy black">
+              {{ research.description }}
+            </p>
+          </a>
+        {% endif %}
       {% endfor %}
     </div>
   </section>

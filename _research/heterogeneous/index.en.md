@@ -3,18 +3,21 @@ layout: research
 title: Heterogeneous Computing
 description: I-Arch
 advisors:
-  - Fuxin Zhang
+  - Jian Wang
 maintainers:
-  - Gen Niu
+  - Wenqing Li
 contributors:
-  - Xinyu Li
-  - Gen Niu
-date: 2023-06-26
+  - Xin Cheng
+  - Wenjin Li
+  - CHENGHAO YAN
+  - YUE YAN
+  - JINPENG YE
+date: 2023-07-04
 permalink: research/heterogeneous
 lang: en
 construct: true
 ---
 
-## Anything want to say
+## Research
 
-Nothing, do not want to say anything.
+[Hardware Thread-Level Speculation](/project/thread-level-speculation)

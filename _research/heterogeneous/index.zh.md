@@ -8,6 +8,10 @@ maintainers:
   - 李文青
 contributors:
   - 程鑫
+  - 李文晋
+  - 燕澄皓
+  - 晏悦
+  - 叶锦鹏
 date: 2023-07-03
 permalink: research/heterogeneous
 lang: zh

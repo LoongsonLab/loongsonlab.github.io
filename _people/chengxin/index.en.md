@@ -18,4 +18,4 @@ lang: en
 
 - Parallel Computing
 - Multi-cores Architecture
-- Hardware Thread-Level Speculation
+- [Hardware Thread-Level Speculation](/project/thread-level-speculation)

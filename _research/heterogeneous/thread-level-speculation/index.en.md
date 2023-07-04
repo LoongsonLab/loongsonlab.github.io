@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: research
 title: Heterogeneous Computing
 description: Hardware Thread-Level Speculation System
 advisors:
@@ -9,7 +9,7 @@ maintainers:
 contributors:
   - Wenqing Li
   - JINPENG YE
-date: 2023-07-03
+date: 2023-07-04
 permalink: project/thread-level-speculation
 lang: en
 construct: true

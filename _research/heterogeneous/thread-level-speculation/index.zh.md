@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: research
 title: 异构计算组
 description: 硬件线程级推测并行系统
 advisors:
@@ -9,7 +9,7 @@ maintainers:
 contributors:
   - 李文青
   - 叶锦鹏
-date: 2023-07-03
+date: 2023-07-04
 permalink: project/thread-level-speculation
 lang: zh
 construct: true
