@@ -12,13 +12,13 @@ permalink: people/zhangfuxin
 lang: en
 ---
 
-## 个人简介
+## Personal Profile
 
-* 研究方向：微处理器结构设计；性能分析；操作系统；软件共享存储系统等
-* 所属部门：微处理器研究中心、处理器芯片重点实验室
-* 导师类别：博导计算机系统结构
+* Research interests: Microprocessor Architecture Design; Performance Aanalysis; Operating Systems; Software Shared Storage Systems, etc.
+* Department: Microprocessor Technology Research Center, State Key Laboratory of Processor
+* Supervisory category: PhD in Computer System Architecture
 
-## 主要论著
+## Publications
 
 1. Microarchitecture of the Godson-2 processor. Weiwei Hu, Fuxin Zhang, Zusong Li. Journal of Computer Science and Technology, 2005.2. (SCI索引，EI索引号：05209106298)
 2. 可恢复的软件DSM系统JIACKPT。张福新，章隆兵，胡伟武，唐志敏。《软件学报》,2005.2。（EI索引号：05149025715）
@@ -30,23 +30,23 @@ lang: en
 8. Dynamic Data prefetching in Home-based Software DSM. Weiwu Hu,Fuxin Zhang,Haiming Liu. Journal of Computer Science and Technology, 16(3),231-241,2001. （SCI 索引：433AC）
 9. A New Home-Based Software DSM Protocol for SMP Clusters. Weiwu Hu,Fuxin Zhang,Haiming Liu. 2000. Euro-Par, pp 1132-1142. (SCI索引：BY35X)
 
-## 发明专利
+## Patents
 
 1. 动态索引的微处理器高速缓存装置。胡伟武，张福新，唐志敏。专利证书号：ZL 01 1 44708.7.
 2. CPU硬件支持的系统攻击防范方法。胡伟武，张福新，唐志敏。专利证书号：ZL 01 1 35046.6.
 
-## 科研项目
+## Research Projects
 
-* 龙芯1号、2号处理器（主要结构设计者之一）
-* 龙芯2号结构级模拟器sim-godson
-* 支持检查点的软件共享存储系统JIACKPT
-* 支持64位处理器的JIAJIA64
-* Linux内核中的软件DSM系统KJIAJIA
+* Loongson 1 and 2 processors (one of the main architecture designers)
+* Loongson 2 architecture-level simulator sim-godson
+* JIACKPT, a software shared storage system with checkpoint support
+* JIAJIA64 with support for 64-bit processors
+* KJIAJIA, a software DSM system in the Linux kernel
 
-## 获奖及荣誉
+## Awards and Honours
 
-1. 2003年获中科院杰出科技成就奖
-2. 2003年获计算所所长奖学金优秀奖
-3. 2004年获计算所所长奖学金特等奖
-4. 2005年获中科院刘永龄奖学金特等奖
-5. 2005年获常熟市十大杰出青年
+1. 2003 Award for Outstanding Scientific and Technological Achievement, Chinese Academy of Sciences
+2. 2003 Award of Merit of the Director's Scholarship of the Institute of Computing
+3. 2004 Special Award of the Director's Scholarship of the Institute of Computing
+4. 2005, Liu Yongling Scholarship Special Award, Chinese Academy of Sciences
+5. 2005 Top Ten Outstanding Young Persons of Changshu City
