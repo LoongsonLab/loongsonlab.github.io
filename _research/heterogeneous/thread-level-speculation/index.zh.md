@@ -13,6 +13,7 @@ date: 2023-07-04
 permalink: project/thread-level-speculation
 lang: zh
 construct: true
+index_hide: true
 ---
 
 ## 线程级推测并行
