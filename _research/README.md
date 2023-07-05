@@ -27,7 +27,8 @@ contributors:
 date: YYYY-MM-DD
 permalink: research/KEY
 lang: zh/en
-construct: true/false
+construct: true/false (optional is false)
+index_hide: true/false (optional is false)
 ---
 
 ## Something...
@@ -39,3 +40,14 @@ You also need to make sure the `description` cannot be too long (or the page may
 The `advisors`, `maintainers` and `contributors` can be eliminated, but we recommend you add them correctly.
 
 Please send a pull request with the changes and an admin will merge it.
+
+Also, if you want to create each group in a team, use `index_hide`. Then the group information will not show on the index page.
+
+Make sure on each page, you need use `{% link _research/heterogeneous/thread-level-speculation/index.zh.md %}` to generate
+the link URL.
+You can get more information [here](https://jekyllrb.com/docs/liquid/tags/#links).
+For example:
+
+```md
+[Link]({% link _research/*.md %})
+```
