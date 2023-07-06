@@ -8,6 +8,7 @@ maintainers:
   - Gen Niu
   - Benyi Xie
   - Xinyu Li
+  - Yanzhi Lan
 contributors:
   - Dongru Zhao
   - Weiming Guo

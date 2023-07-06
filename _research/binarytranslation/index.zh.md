@@ -8,6 +8,7 @@ maintainers:
   - 牛根
   - 谢本壹
   - 李欣宇
+  - 兰彦志
 contributors:
   - 赵东儒
   - 郭伟明
