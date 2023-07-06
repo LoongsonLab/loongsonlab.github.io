@@ -42,9 +42,11 @@ layout: default
             <source srcset="{{ 'assets/person.png' | relative_url }}"></source>
             <img class="br-100 w3 h3 mb1" alt="Picture of {{ name }}" />
           </picture>
-          <div class="black mw4 tc">{% include person name=name %}</div>
+          <div class="black mw4 tc">
+            <i class="fas fa-chalkboard-user f6" aria-hidden="true"></i>
+            {% include person name=advisor %}
+          </div>
         </div>
-        <i class="fas fa-chalkboard-user f6" aria-hidden="true"></i> {{ advisor }}
       </a>
       {% endfor %}
     </div>

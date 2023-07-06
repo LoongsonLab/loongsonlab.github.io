@@ -1,6 +1,6 @@
 ---
 layout: people
-name: WEIMING GUO
+name: Weiming Guo
 image: /assets/people/guoweiming.jpg
 role: Masters Student
 blog: https://www.baidu.com

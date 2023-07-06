@@ -31,7 +31,7 @@ layout: page
               <source srcset="{{ 'assets/person.png' | relative_url }}"></source>
               <img class="br-100 w3 h3 mb1" alt="Picture of {{ name }}" />
             </picture>
-            <div class="black">{{ name }}</div>
+            <div class="black mw4 tc">{% include person name=name %}</div>
           </div>
         </a>
       {% endfor %}

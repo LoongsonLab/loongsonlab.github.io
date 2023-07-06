@@ -1,6 +1,6 @@
 ---
 layout: people
-name: ZHUANGZHUANG ZHANG
+name: Zhuangzhuang Zhang
 image: /assets/people/zhangzhuangzhuang.jpg
 role: Masters Student
 blog: https://www.baidu.com

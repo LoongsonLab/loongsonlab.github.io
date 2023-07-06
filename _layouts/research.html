@@ -37,7 +37,7 @@ layout: default
     <div class="w-70-ns w-100">
     {{ content }}
     </div>
-    <div class="w-20-ns w-100">
+    <div class="w-30-ns w-100">
       {% if page.advisors.size %}
       <h3>{{- site.data.research[site.active_lang]["advisor"] -}}</h3>
       <div class="flex flex-row flex-wrap items-start pv1">
@@ -50,9 +50,8 @@ layout: default
               <source srcset="{{ 'assets/person.png' | relative_url }}"></source>
               <img class="br-100 w3 h3 mb1" alt="Picture of {{ name }}" />
             </picture>
-            <div class="black mw4 tc">{% include person name=name %}</div>
+            <div class="black mw4 tc">{% include person name=advisor %}</div>
           </div>
-          <div style="text-align: center">{{ advisor }}</div>
         </a>
         {% endfor %}
       </div>
@@ -69,9 +68,8 @@ layout: default
               <source srcset="{{ 'assets/person.png' | relative_url }}"></source>
               <img class="br-100 w3 h3 mb1" alt="Picture of {{ name }}" />
             </picture>
-            <div class="black mw4 tc">{% include person name=name %}</div>
+            <div class="black mw4 tc">{% include person name=maintainer %}</div>
           </div>
-          <div style="text-align: center">{{ maintainer }}</div>
         </a>
         {% endfor %}
       </div>
@@ -88,9 +86,8 @@ layout: default
               <source srcset="{{ 'assets/person.png' | relative_url }}"></source>
               <img class="br-100 w3 h3 mb1" alt="Picture of {{ name }}" />
             </picture>
-            <div class="black mw4 tc">{% include person name=name %}</div>
+            <div class="black mw4 tc">{% include person name=contributor %}</div>
           </div>
-          <div style="text-align: center">{{ contributor }}</div>
         </a>
         {% endfor %}
       </div>

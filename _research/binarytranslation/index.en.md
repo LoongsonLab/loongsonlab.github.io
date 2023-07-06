@@ -6,15 +6,54 @@ advisors:
   - Fuxin Zhang
 maintainers:
   - Gen Niu
-contributors:
+  - Benyi Xie
   - Xinyu Li
-  - Gen Niu
-date: 2023-06-26
+contributors:
+  - Dongru Zhao
+  - Weiming Guo
+  - Zhuangzhuang Zhang
+  - Zhaoxin Yang
+date: 2023-07-06
 permalink: research/binarytranslation
 lang: en
 construct: true
 ---
 
-## Anything want to say
+If you have some interest in **Instruction Flow Analysis**, **Compilation**, **Virtualization** and **Operating Systems**, then hopefully this page will give you some relevant content on **Binary Translation**.
 
-Nothing, do not want to say anything.
+## What is Binary Translation
+
+TLDR; Binary Translation allows applications from X86, ARM, RISC-V and other architectures to run on a Loongson processor (LoongArch).
+
+Since programs of different architectures contain different machine codes, cross-architecture programs cannot be run directly. For example, programs on X86 cannot be run on ARM or LoongArch.
+In order to allow programs of different architectures to run on the target platform without recompilation, we need to use [binary translation techniques](https://en.wikipedia.org/wiki/Binary_translation).
+
+Altman proposes that binary translation can be divided into three main categories, namely **interpreted execution**, **static binary translation**, and **dynamic binary translation**[^1]. Of course combining their advantages, we also have the existence of **hybrid binary translation systems**.
+
+* interpreted execution interprets each instruction in real time, without optimisation or caching;
+* Static binary translation uses "offline" translation, where the original binary file is analysed, translated and optimised without the program running;
+* Dynamic binary translation is "online", translating a fragment only when the program reaches it;
+* Hybrid binary translation combines the advantages of the previous types to find a balance between performance and correctness.
+
+[^1]: E. R. Altman, D. Kaeli and Y. Sheffer, "Welcome to the opportunities of binary translation," in Computer, vol. 33, no. 3, pp. 40-45, March 2000, doi: 10.1109/2.825694.
+
+The common binary translations that we have access to now are [QEMU](https://www.qemu.org/), [Rosetta2](https://support.apple.com/zh-cn/HT211861), [DynamoRIO](https://dynamorio.org/), which uses binary translation techniques and [Pin](https://www.intel.cn/content/www/cn/zh/developer/articles/tool/pin-a-dynamic-binary-instrumentation-tool.html).
+
+## What we're doing
+
+The research is in the areas of [Binary Translation Optimisation](#binary-translation-optimisation), [Dynamic Library Packaging](#dynamic-library-packaging), [Micro-translator](#micro-translator) and [Full system Binary Translation](#full-system-binary-translation).
+
+### Binary Translation Optimisation
+
+### Dynamic Library Packaging
+
+### Micro-translator
+
+### Full system Binary Translation
+
+## Introductory Experiments
+
+In order to give you a better and faster understanding of binary translation, we have designed some introductory experiments.
+We hope that these experiments will complement your understanding of "a binary program", but they are not limited to binary translation only.
+
+* [address for introductory experiments](http://172.17.103.58/lanyanzhi/LAT-Guide) (requires intranet access)
