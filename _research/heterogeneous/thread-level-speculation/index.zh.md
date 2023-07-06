@@ -10,7 +10,7 @@ contributors:
   - 李文青
   - 叶锦鹏
 date: 2023-07-04
-permalink: project/thread-level-speculation
+permalink: research/heterogeneous/thread-level-speculation
 lang: zh
 construct: true
 index_hide: true

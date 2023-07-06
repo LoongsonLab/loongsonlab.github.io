@@ -200,3 +200,22 @@ p, ul, ol {
   margin: 0;
   padding: .05rem 0;
 }
+
+.footnotes {
+  font-size: 14px;
+}
+
+.footnotes ol {
+  padding: 0 2em;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: var(--cas-gray);
+}
+
+a.footnote:before {
+ content: "[";
+}
+
+a.footnote:after {
+    content: "]";
+}

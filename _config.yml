@@ -48,3 +48,7 @@ plugins:
   - jekyll-redirect-from
 kramdown:
   toc_levels: 1..2
+  syntax_highlighter: coderay
+  syntax_highlighter_opts:
+    line_numbers: table
+    bold_every: 5
