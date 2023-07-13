@@ -3,9 +3,7 @@ layout: people
 name: 赵东儒
 image: /assets/people/zhaodongru.jpg
 role: 硕士研究生
-blog: https://www.baidu.com
-email: example@example.com
-github: https://www.baidu.com
+email: zhaodongru@loongson.cn
 alumni: false
 advisors:
     - 张福新
@@ -14,6 +12,7 @@ permalink: people/zhaodongru
 lang: zh
 ---
 
-## 有什么话想说的
+## 关于我
 
-没有，我一句都不想说
+就读于中国科学技术大学，先进技术研究院，研究生三年级
+目前研究方向为二进制翻译
