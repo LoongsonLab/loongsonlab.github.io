@@ -3,9 +3,7 @@ layout: people
 name: Dongru Zhao
 image: /assets/people/zhaodongru.jpg
 role: Masters Student
-blog: https://www.baidu.com
-email: example@example.com
-github: https://www.baidu.com
+email: zhaodongru@loongson.cn
 alumni: false
 advisors:
     - Fuxin Zhang
@@ -14,6 +12,7 @@ permalink: people/zhaodongru
 lang: en
 ---
 
-## Anything want to say
+## About me 
 
-Nothing, do not want to say anything.
+I am studying at the Institute of Advanced Technology, University of Science and Technology of China, in my third year of graduate school
+My current research interests are binary translation
