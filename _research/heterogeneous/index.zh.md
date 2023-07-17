@@ -20,5 +20,5 @@ construct: true
 
 ## 研究课题
 
-[硬件线程级推测并行系统]({% link _research/heterogeneous/thread-level-speculation/index.zh.md %})
-[异构融合计算]({% link _research/heterogeneous/heterogeneous-fusion-computing/index.zh.md %})
+* [硬件线程级推测并行系统]({% link _research/heterogeneous/thread-level-speculation/index.zh.md %})
+* [异构融合计算]({% link _research/heterogeneous/heterogeneous-fusion-computing/index.zh.md %})

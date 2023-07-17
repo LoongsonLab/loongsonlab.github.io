@@ -10,9 +10,8 @@ contributors:
   - Wenqing Li
   - JINPENG YE
 date: 2023-07-17
-permalink: research/heterogeneous/thread-level-speculation
+permalink: research/heterogeneous/heterogeneous-fusion-computing
 lang: en
-construct: true
 index_hide: true
 ---
 

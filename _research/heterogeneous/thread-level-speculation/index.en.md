@@ -12,7 +12,6 @@ contributors:
 date: 2023-07-17
 permalink: research/heterogeneous/thread-level-speculation
 lang: en
-construct: true
 index_hide: true
 ---
 

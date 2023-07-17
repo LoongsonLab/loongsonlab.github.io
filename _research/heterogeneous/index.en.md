@@ -20,4 +20,5 @@ construct: true
 
 ## Research
 
-[Hardware Thread-Level Speculation]({% link _research/heterogeneous/thread-level-speculation/index.en.md %})
+* [Hardware Thread-Level Speculation]({% link _research/heterogeneous/thread-level-speculation/index.en.md %})
+* [Thread-Level Speculation]({% link _research/heterogeneous/heterogeneous-fusion-computing/index.en.md %})

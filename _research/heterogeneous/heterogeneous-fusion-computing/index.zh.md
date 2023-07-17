@@ -12,7 +12,6 @@ contributors:
 date: 2023-07-17
 permalink: research/heterogeneous/heterogeneous-fusion-computing
 lang: zh
-construct: true
 index_hide: true
 ---
 
