@@ -33,7 +33,7 @@ construct: true
 
 # CPUBench开发
 为了弥补国内CPU性能评测工具的空白，联合中国电子技术标准化研究所，开发了对通用计算场景下的CPU、内存子系统以及所以来的编译器进行综合计算能力评估的Benchmark——CPUBench。目前CPUBench 1.0已经全面应用于龙芯性能分析的测试工作中，并针对测试反馈计划改进并推出CPUBench 2.0版本。
-有关CPUBench的内容参见[CPUBench: 一款开放的通用计算CPU性能基准工具](CPUBench.pdf)。
+有关CPUBench的内容参见[CPUBench: 一款开放的通用计算CPU性能基准工具]({{ '/assets/research/performance/CPUBench.pdf' | relative_url }})。
 
 # GCC性能优化
 针对3A5000在SPEC CPU2006测试结果中的性能瓶颈点，从编译器角度进行性能调优。

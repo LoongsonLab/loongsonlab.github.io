@@ -28,7 +28,7 @@ Thread-level speculative parallelism is a multi-core parallel architecture, whic
 
 At the same time, heterogeneous computing is a hot spot in the current computing architecture evolution trend. Intel's Alder Lake combines Goldencove and Gracement cores to improve the multi-core performance of processors under limited area resources. Generally speaking, the energy efficiency core is limited by resources, and the single-thread performance is necessarily weaker than the performance core, but the area is small, and multiple energy efficiency cores can be integrated in the same area, providing multi-core advantages. In order to make better use of the multi-core parallel capability of the energy efficient core, increasing the thread-level inference parallel extension will improve the overall performance of the energy efficient core and play its multi-core advantage. Take the size of the Intel 12700 platform as an example,
 
-![](/assets/research/heterogeneous/thread-level-speculation/12700.png)
+![]({{ '/assets/research/heterogeneous/thread-level-speculation/12700.png' | relative_url }})
 
 According to the layout published by Intel, the area of Goldencove core is about 4 times that of Gracement core, and if the use of thread-level inferred parallel to execute serial programs on 4 Gracement cores, the acceleration ratio can be more than 2 times faster than the performance core. Then it would be profitable to add thread-level speculative parallelism to energy efficient cores.
 

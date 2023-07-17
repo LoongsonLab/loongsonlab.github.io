@@ -28,7 +28,7 @@ index_hide: true
 
 同时异构计算是当前计算架构演进潮流中的热点，Intel提出的Alder Lake就以性能核（Goldencove）和能效核（Gracement）结合的方式在有限的面积资源下提升处理器多核性能。通常而言，能效核受资源限制，单线程性能必然弱于性能核，但是面积小，可以在相同面积下集成多个能效核，提供多核优势。为了更好地利用能效核的多核并行能力，增加线程级推测并行扩展将提升能效核的整体性能，发挥其多核优势。以Intel 12700平台的大小核为例，
 
-![](/assets/research/heterogeneous/thread-level-speculation/12700.png)
+![]({{ '/assets/research/heterogeneous/thread-level-speculation/12700.png' | relative_url }})
 
 根据Intel公布的版图显示，Goldencove核心的面积大约是Gracement核心的4倍，如果在4个Gracement核心上利用线程级推测并行来执行串行程序能获得比性能核快2倍以上的加速比，那么在能效核上增加线程级推测并行的能力将是有利可图的。
 
