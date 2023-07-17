@@ -1,6 +1,6 @@
 ---
 layout: research
-title: 异构计算组
+title: 新型架构组
 description: 硬件线程级推测并行系统
 advisors:
   - 王剑
