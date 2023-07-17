@@ -3,13 +3,12 @@ layout: people
 name: YUHAN WU
 image: /assets/people/wuyuxuan.jpg
 role: Masters Student
-blog: https://www.baidu.com
-email: example@example.com
-github: https://www.baidu.com
+email: wuyuxuan21@mails.ucas.ac.cn
+github: https://github.com/xuan-xuan7
 alumni: false
 advisors:
-    - Fuxin Zhang
-date: 2023-06-26
+    - Junhu Xiao
+date: 2023-07-17
 permalink: people/wuyuxuan
 lang: en
 ---

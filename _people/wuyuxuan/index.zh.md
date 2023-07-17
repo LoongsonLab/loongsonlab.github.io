@@ -3,13 +3,12 @@ layout: people
 name: 吴钰轩
 image: /assets/people/wuyuxuan.jpg
 role: 硕士研究生
-blog: None
 email: wuyuxuan21@mails.ucas.ac.cn
 github: https://github.com/xuan-xuan7
 alumni: false
 advisors:
     - 肖俊华
-date: 2023-06-26
+date: 2023-07-17
 permalink: people/wuyuxuan
 lang: zh
 ---
