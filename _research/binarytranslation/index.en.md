@@ -14,6 +14,7 @@ contributors:
   - Weiming Guo
   - Zhuangzhuang Zhang
   - Zhaoxin Yang
+  - Liangpu Wang
 date: 2023-07-06
 permalink: research/binarytranslation
 lang: en
@@ -47,6 +48,14 @@ The research is in the areas of [Binary Translation Optimisation](#binary-transl
 ### Binary Translation Optimisation
 
 ### Dynamic Library Packaging
+
+Dynamic Libaray Packaging is an enxtention of application of binary translation, compared to binary translation, which is focus on translating full excution file of guest, dunamic library packaging is focus on how to combie host excution file and guest dynamic library smoothly.
+
+The difficulties in dynamic library packaging lie in correctly and efficiently switch between guest code and host code, which usually happens in function calls between guest and host. Because the calling conventions of host and guest are usually not the same, a switch code is needed between these function calls. From this perspective, library packaging is a virtualization of call convention of different ISAs.
+
+Packaging for a specific library is cumbersome and not universal. We hope to use compiler-related technologies to automate and generalize this process, and finally enable it to be put into practical applications.
+
+There is currently no well-known work in the field of library packaging; library passthrough is a similar work, library passthrough focuses on using native library functions to speed up the execution of translated guest programs. FEX, BOX64, etc. use library passthrough technology to accelerate their binary translator.
 
 ### Micro-translator
 
