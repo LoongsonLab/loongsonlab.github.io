@@ -52,6 +52,25 @@ The research is in the areas of [Binary Translation Optimisation](#binary-transl
 
 ### Full system Binary Translation
 
+### Complie Optimization Guided Binary Translation
+The efficiency of a binary translation system heavily relies on the quality of the **translated code** it generates.
+Currently, most binary translators for code translation, such as QEMU and Rosetta2, use a one-to-one/many mapping approach, which does not fully explore **the optimization space between instructions**.
+
+COGBT is a compile optimization guided binary translator. 
+Its goal is to explore the optimization space between instructions through compilation techniques.
+Additionally, the scalability of LLVM makes it easier to implement specific optimization passes.
+
+Some optimization techniques has been implemented:
+- Stack variables translation model: this model achieves fixed register mapping in the LLVM IR stage.
+- Specific optimization passes: Flag Elimination Pass, Pattern Analysis Pass, etc.
+- Translation Units (TUs): Combining multiple Translation Blocks (TBs) to explore the optimization space between them.
+- Profile-guided optimization: Collecting hot paths of traces, collecting targets of indirect jumps, etc.
+
+Some optimization techniques that could be explored in the future:
+- Automatic vectorization of floating-point operations.
+- Promotion of stack variables to register variables.
+- Precise exceptions.
+
 ## Introductory Experiments
 
 In order to give you a better and faster understanding of binary translation, we have designed some introductory experiments.
