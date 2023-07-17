@@ -1,6 +1,6 @@
 ---
 layout: people
-name: JINPENG YE
+name: Jinpeng Ye
 image: /assets/people/yejinpeng.jpg
 role: Masters Student
 blog: https://www.baidu.com

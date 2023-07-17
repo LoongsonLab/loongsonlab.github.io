@@ -1,6 +1,6 @@
 ---
 layout: people
-name: HAICHAO YOU
+name: Haichao You
 image: /assets/people/youhaichao.jpg
 role: Masters Student
 blog: https://www.baidu.com

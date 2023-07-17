@@ -8,7 +8,7 @@ maintainers:
   - Xin Cheng
 contributors:
   - Wenqing Li
-  - JINPENG YE
+  - Jinpeng Ye
 date: 2023-07-17
 permalink: research/heterogeneous/thread-level-speculation
 lang: en

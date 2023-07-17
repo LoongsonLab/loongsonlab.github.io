@@ -1,6 +1,6 @@
 ---
 layout: people
-name: CHENGHAO YAN
+name: Chenghao Yan
 image: /assets/people/yanchenghao.jpg
 role: Masters Student
 blog: https://www.baidu.com

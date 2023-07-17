@@ -9,9 +9,9 @@ maintainers:
 contributors:
   - Xin Cheng
   - Wenjin Li
-  - CHENGHAO YAN
-  - YUE YAN
-  - JINPENG YE
+  - Chenghao Yan
+  - Yue Yan
+  - Jinpeng Ye
 date: 2023-07-04
 permalink: research/heterogeneous
 lang: en

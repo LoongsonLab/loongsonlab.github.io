@@ -1,6 +1,6 @@
 ---
 layout: people
-name: YUE YAN
+name: Yue Yan
 image: /assets/people/yanyue.jpg
 role: Masters Student
 blog: https://jensen-yan.github.io/

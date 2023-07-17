@@ -5,10 +5,10 @@ description: Hardware Thread-Level Speculation System
 advisors:
   - Jian Wang
 maintainers:
-  - Xin Cheng
-contributors:
   - Wenqing Li
-  - JINPENG YE
+contributors:
+  - Jinpeng Ye
+  - Haichao You
 date: 2023-07-17
 permalink: research/heterogeneous/heterogeneous-fusion-computing
 lang: en
