@@ -24,11 +24,11 @@ GEM
       ffi (>= 1.15.0)
     eventmachine (1.2.7)
     execjs (2.8.1)
-    faraday (2.7.7)
-      faraday-net_http (>= 2.0, < 3.1)
-      ruby2_keywords (>= 0.0.4)
-    faraday-net_http (3.0.2)
-    faraday-retry (2.2.0)
+    faraday (2.9.0)
+      faraday-net_http (>= 2.0, < 3.2)
+    faraday-net_http (3.1.0)
+      net-http
+    faraday-retry (2.2.1)
       faraday (~> 2.0)
     ffi (1.15.5)
     forwardable-extended (2.6.0)
@@ -215,6 +215,8 @@ GEM
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
     minitest (5.19.0)
+    net-http (0.4.1)
+      uri
     nokogiri (1.14.3)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
@@ -230,7 +232,6 @@ GEM
       ffi (~> 1.0)
     rexml (3.2.5)
     rouge (3.26.0)
-    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     safe_yaml (1.0.5)
     sass (3.7.4)
@@ -253,6 +254,7 @@ GEM
       unf_ext
     unf_ext (0.0.8.2)
     unicode-display_width (1.8.0)
+    uri (0.13.0)
     webrick (1.8.1)
 
 PLATFORMS
